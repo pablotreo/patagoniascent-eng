@@ -1,0 +1,50 @@
+---
+interface Props {
+  miArray: Array<{ alt: string, srcFotos: string, srcThum: string }>;
+}
+
+const { miArray } = Astro.props;
+---
+
+<div class="col-auto col-lg-6 mt-5 px-lg-0">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      {
+        miArray.map ((foto, index) => (
+          <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <img src={foto.srcFotos} class="d-block w-100" alt={foto.alt} />
+          </div>
+        )
+      )}
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+    <div class="carousel-indicators mx-0">
+      {
+        miArray.map ((foto, index) => (
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to={index} 
+          class={`img-thumbnail ${index === 0 ? 'active' : ''}`} aria-current="true" aria-label="Slide 1">
+            <img src={foto.srcThum} class="d-block w-100" alt={foto.alt} />
+          </button>
+        )
+      )}
+    </div>
+  </div>
+</div>
+
+<style>
+  .carousel-indicators button[data-bs-target] {
+    width: max-content;
+  } 
+  .carousel-indicators{
+    margin-bottom: -18px;
+  }
+</style>

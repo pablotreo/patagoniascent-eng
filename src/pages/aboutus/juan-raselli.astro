@@ -1,0 +1,49 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+
+---
+
+<LayoutPaginas title="About Us" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Mountain Guide' />
+
+    <div class="container text-center px-3 px-lg-5">
+      <div class="row">
+
+        <div class="col-auto col-lg-9 py-2 px-0">
+          <nav aria-label="breadcrumb mb-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="">About Us</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="">Juan Raselli</a></li>
+            </ol>
+          </nav>
+          <h5 class="fs-4 text-start text-body-secondary border-top pt-3">Juan M. Raselli</h5>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-2 pe-lg-4">
+            <p>Juan Manuel Raselli has been a mountain trekking guide since 2009 and IFMGA/UIAGM high mountain guide since 2014. He has climbed several routes on peaks of the Argentine Andes mountain range, as well as in Peru, Brazil, France, Spain, Germany, Italy and Austria. He has worked on Aconcagua since 2002 and has lived in El Chaltén since 2004 where he has climbed several routes and guided many tours in the Fitz Roy and the Cerro Torre mountain ranges. <br>
+            One of his best achievements  was the “mushroom traverse”, making the first ascent of Minitorre and finalizing with the west face of Torre in one push. On the last winter seasons he had make some new ski descents on some of the nice places that this area still have to discover.<br>
+            He is also an mountain guide courses Instructor for the AAGM (Asociación Argentina de Guías de Montaña).</p>
+          </div>    
+        </div>
+        
+        <div class="col-auto col-lg-3 mt-5 px-lg-0">
+          <div class="text-end">
+            <img src="../img/index/aboutus/JuanRaselli.jpg" class="img-fluid mb-2" alt="Juan Raselli"><br>
+            <a href="https://www.instagram.com/juanraselli/" target="_blank" class="fs-3 fw-lighter text-body-secondary text-decoration-none">
+            <i class="fab fa-instagram"></i> instagram</a>   
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
+</style>

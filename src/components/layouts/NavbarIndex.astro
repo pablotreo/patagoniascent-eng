@@ -1,0 +1,149 @@
+---
+const redes = [
+  {
+    nombre: 'CONTACT US',
+    href: '/',
+    links: [
+      {
+        alt: 'Instagram',
+        href: 'https://www.instagram.com/patagonia_ascent/',
+        class: 'nav-link redes fab fa-instagram',
+      },
+      {
+        alt: 'Facebook',
+        href: 'https://www.facebook.com/PatagoniAscent',
+        class: 'nav-link redes fab fa-facebook',
+      },
+      {
+        alt: 'YouTube',
+        href: 'https://www.youtube.com/channel/UCMqFsAQ6I0cjByx82SaIQRg',
+        class: 'nav-link redes fab fa-youtube',
+      },
+      {
+        alt: 'WhatsApp',
+        href: 'https://wa.me/542966464845/',
+        class: 'nav-link redes fab fa-whatsapp',
+      },
+    ],
+  },
+]
+const links = [
+  {
+    name: 'ABOUT US',
+    href: '#aboutus',
+  },
+  {
+    name: 'MOUNTAINEERING',
+    href: '#mountaineering',
+  },
+  {
+    name: 'CLIMBING',
+    href: '#climbing',
+  },
+  {
+    name: 'COURSES',
+    href: '#courses',
+  },
+  // {
+  //   name: 'CONTACT US',
+  //   href: '/',
+  //   isExternal: 'false',
+  // },
+]
+const logos = [
+  {
+    img: '../img/aagm.png',
+    href: 'http://www.ivbv.info/en/home.html',
+    alt: 'AAGM',
+  },
+  {
+    img: '../img/uiagm.png',
+    href: 'http://www.aagm.com.ar/',
+    alt: 'UIAGM',
+  }
+];
+---
+ 
+  <nav class="navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-sm">
+      <a class="navbar-brand" href="/">
+        <img class="img-fluid" alt="patagoniascent" src="../img/logo.png"></img>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="custom-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-lg-center">
+          {
+            links.map((link) => (
+            <li class="nav-item">
+              <a href={link.href} class="fs-6 nav-link" aria-current="page">{link.name}</a>
+            </li>
+          )
+          )}
+
+        {redes.map((red) => (
+              <li class="nav-item">
+                <a href={red.href} class="nav-link contacto fs-6" aria-current="page">
+                  {red.nombre}
+                </a>
+                <ul class="ul-redes">
+                  {red.links.map((link) => (
+                    <a href={link.href} target="_blanck" class={link.class} aria-current="page"/>
+                    )
+                  )}
+                </ul>
+              </li>
+          )
+        )}
+
+          {logos.map((logo) => (
+              <li class="nav-item">
+                <a href={logo.href} target="_blanck" class="nav-link" aria-current="page">
+                  <img src={logo.img} alt={logo.alt} class="d-none d-lg-block" />
+                </a>
+              </li>
+            )
+          )}
+
+        </ul>		  
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .navbar-toggler{
+      box-shadow: none;
+      border: none;
+    } 
+    .custom-toggler-icon {
+	    color: #ffffff;
+	    font-size: 25px;
+    }
+    .navbar {
+      background-color: rgb(0,0,0,0.5)!important;
+      text-align: right;
+    }
+    .nav-link {
+      font-weight: 400;
+      color: white;
+    }
+    .contacto {
+      position: relative;
+    }
+    .redes {
+      font-size: 18px;
+      padding: 5px!important;
+      padding-top: 0px!important;
+    }
+    .ul-redes {
+      position: absolute; 
+      padding-left: 2px;
+    }
+
+    @media (max-width: 575.98px) {
+      .ul-redes {
+        position: relative; 
+      }
+    }
+  </style>

@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<h2 class="border-top border-bottom mt-4 pt-2 pb-3 titulo fs-1 fw-light text-body-secondary">
+  <i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>
+  {title}
+</h2>
+
+<style>
+  .titulo {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+    letter-spacing: 1px; 
+  }
+</style>
+

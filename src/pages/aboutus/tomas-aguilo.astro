@@ -1,0 +1,51 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+
+---
+
+<LayoutPaginas title="About Us" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Mountain Guide' />
+
+    <div class="container text-center px-3 px-lg-5">
+      <div class="row">
+
+        <div class="col-auto col-lg-9 py-2 px-0">
+          <nav aria-label="breadcrumb mb-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="">About Us</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="">Tomás Aguiló</a></li>
+            </ol>
+          </nav>
+          <h5 class="fs-4 text-start text-body-secondary border-top pt-3">Tomás R. Aguiló</h5>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-2 pe-lg-4">
+            <p>
+              Tomy was born in San Carlos de Bariloche, northern Patagonia, and is now an IFMGA/UIAGM Mountain Guide. At 5 years of age he began to ski and from   there he developed his passion for the mountains. He moved to El Chalten in 2006.<br>
+              Tomy has worked as a guide in Nepal, France, Suitzerland, Italy, Argentina, Chile, Peru, and Bolivia. From technical climbing in Patagonia (guiding Fitz Roy, Cerro Torre, Poincenot), ski touring in remote places (Cordillera Sarmiento), Heliski in Zermatt (switzerland), and climbing in altitude (Mera Peak, Aconcagua, Alpamayo). <br>
+              He has summited Fitz Roy 11 times and Cerro Torre 2 times, as well as numerous ascents of the other peaks in these ranges.
+            </p>
+          </div>    
+        </div>
+        
+        <div class="col-auto col-lg-3 mt-5 px-lg-0">
+          <div class="text-end">
+            <img src="../img/index/aboutus/TomasAguilo.jpg" class="img-fluid mb-2" alt="Tomás Roy Aguiló">
+            <a href="https://www.instagram.com/fitzroyguide/" target="_blank" class="fs-3 fw-lighter text-body-secondary text-decoration-none">
+            <i class="fab fa-instagram"></i> instagram</a>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
+</style>

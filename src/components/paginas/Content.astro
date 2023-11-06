@@ -1,0 +1,43 @@
+---
+interface Props {
+	title: string;
+  description : string;
+  difficulty : string;
+  duration : string;
+  pax : string;
+  time : string;
+  link1 : string;
+  link2 : string;
+  href1 : string;
+  href2 : string;
+  hrefitinerary: string;
+}
+
+const { title, description, difficulty, duration, pax, time, link1, link2, href1, href2, hrefitinerary } = Astro.props;
+---
+<div class="col-auto col-lg-6 py-2 px-0">
+  <nav aria-label="breadcrumb mb-2">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+      <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href={href1}>{link1}</a></li>
+      <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href={href2}>{link2}</a></li>
+    </ol>
+  </nav>
+  <h5 class="fs-4 text-start text-body-secondary border-top pt-3">{title}</h5>
+  <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-5">
+    <p>{description}</p>
+    <p><b>Pax:</b> {pax}</p>
+    <p><b>Duration:</b> {duration}</p>
+    <p><b>Difficulty:</b> {difficulty}</p>
+    <p><b>Recommended time:</b> {time}</p>
+    <a href={hrefitinerary} target="_blank" class="fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="--bs-icon-link-transform: translate3d(0, .125rem, 0);" role="button">
+      DOWNLOAD ITINERARY <i class="fa-solid fa-file-arrow-down bi"></i>
+    </a>
+  </div>    
+</div>
+<style>
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
+</style>

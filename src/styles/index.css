@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Museo;
+	src: url('/public/fonts/Museo300-Regular.otf');
+  font-display: swap;
+}
+@font-face {
+  font-family: MuseoSlab;
+  src: url('/public/fonts/Museo_Slab_100.otf');
+  font-display: swap;
+}
+@font-face {
+  font-family: MuseoSans100;
+  src: url('/public/fonts/MuseoSans-100.otf');
+  font-display: swap;
+}
+@font-face {
+  font-family: MuseoSans300;
+  src: url('/public/fonts/MuseoSans-300.otf');
+  font-display: swap;
+}
+@font-face {
+	font-family: MuseoSans500;
+	src: url('/public/fonts/MuseoSans-500.otf');
+	font-display: swap;
+  }
+
+	h1 {
+		font-family: MuseoSlab,sans-serif;
+		color: #ffffff;
+	}
+	h2 {
+		font-family: MuseoSans500,Verdana;
+		color: #ffffff;
+	}
+	h3{
+		font-family: MuseoSlab,sans-serif;
+		color: #ffffff;
+		font-size: 40px;
+	}
+	h5 {
+		font-family: MuseoSans100,Verdana;
+		color: #ffffff;
+		font-size: 14px;
+	}
