@@ -1,8 +1,130 @@
 ---
-
+const links = [
+  {
+    name: 'about us',
+    href: '#aboutus',
+    isExternal: 'false',
+  },
+  {
+    name: 'mountaineering',
+    href: '#mountaineering',
+    isExternal: '',
+  },
+  {
+    name: 'climbing',
+    href: '#climbing',
+    isExternal: 'false',
+  },
+  {
+    name: 'courses',
+    href: '#courses',
+    isExternal: 'false',
+  },
+  {
+    name: 'contact us',
+    href: 'contactus',
+    isExternal: 'false',
+  },
+]
+const redes = [
+      {
+        alt: 'Instagram',
+        href: 'https://www.instagram.com/patagonia_ascent/',
+        icon: '',
+        class: 'fs-5 nav-link p-1 text-body-secondary fab fa-instagram',
+      },
+      {
+        alt: 'Facebook',
+        href: 'https://www.facebook.com/PatagoniAscent',
+        icon: '',
+        class: 'fs-5 nav-link p-1 text-body-secondary fab fa-facebook',
+      },
+      {
+        alt: 'YouTube',
+        href: 'https://www.youtube.com/channel/UCMqFsAQ6I0cjByx82SaIQRg',
+        icon: '',
+        class: 'fs-5 nav-link p-1 text-body-secondary fab fa-youtube',
+      },
+      {
+        alt: 'WhatsApp',
+        href: 'https://wa.me/542966464845/',
+        icon: '',
+        class: 'fs-5 nav-link p-1 text-body-secondary fab fa-whatsapp',
+      },
+]
+const logos = [
+  {
+    img: '../img/paginas/aagmgris.png',
+    href: 'http://www.ivbv.info/en/home.html',
+    alt: 'AAGM',
+  },
+  {
+    img: '../img/paginas/uiagmgris.png',
+    href: 'http://www.aagm.com.ar/',
+    alt: 'UIAGM',
+  }
+];
 ---
-<!-- Footer -->
-<section id="section7" class="find-us">
+
+
+<div class="container pt-5 pt-lg-3 px-4 px-lg-5">
+  <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-5 pt-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none">
+        <h5 class="fw-light text-body-secondary"><span class="fw-medium">PATAGONIA</span>SCENT</h5>
+      </a>
+      <p class="text-body-secondary">Copyright &copy; {new Date().getFullYear()}<br>All rights reserved.</p>
+    </div>
+
+    <div class="col mb-3">
+    </div>
+
+    <div class="col mb-3">
+      <h6 class="fw-medium text-body-secondary">PARTNERS</h6>
+      <ul class="nav">
+        {logos.map((logo) => (
+          <li class="nav-item me-3">
+            <a href={logo.href} target="_blanck" aria-current="page">
+              <img class="ml-4" src={logo.img} alt={logo.alt} />
+            </a>
+          </li>
+        )
+      )}
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h6 class="fw-medium text-body-secondary">CONTACT US</h6>
+      <ul class="nav">
+        {
+          redes.map((red)=> (
+            <li class="nav-item mb-2"><a class={red.class} href={red.href}></a></li>
+          )
+        )}
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h6 class="fw-medium text-body-secondary">SITE MAP</h6>
+      <ul class="nav flex-column">
+        {
+          links.map((link)=>(
+          <li class="nav-item mb-0"><a href={link.href} class="nav-link p-0 text-body-secondary">{link.name}</a></li>
+          )
+        )}
+      </ul>
+    </div>
+
+    
+  </footer>
+</div>
+
+<style>
+
+</style>
+
+
+<!-- <section id="section7" class="find-us">
   <div class="container">
     <div class="p-1">
       <div class="row">
@@ -20,14 +142,14 @@
       </div>
       <div class="col-sm">
         <h3 class="mb-1 mt-1">Contact Us</h3>
-        <!-- <p class="mr-2 texthome"><i class="fa fa-phone-alt"></i> +54 2966 464845</p> -->
+        <p class="mr-2 texthome"><i class="fa fa-phone-alt"></i> +54 2966 464845</p>
         <p class="mr-2 texthome">
           <a class="" href="https://wa.me/542966464845/" target="_blank">
             <i class="fab fa-whatsapp"></i> WhatSapp</a>
         </p> 
         <p class="mr-2 texthome"><i class="fa fa-envelope"></i><a href="mailto:patagoniascent@gmail.com">  patagoniascent@gmail.com</a></p>                
         <p class="mr-2 texthome "><i class="fa fa-map-marked-alt"></i><a> Leonel Terray 324, Z9301 El Chalten, Santa Cruz, Argentina</a></p>
-        <!-- <p class="mr-2">@ <b>PATAGONIA</b>SCENT 2020</p> -->
+        <p class="mr-2">@ <b>PATAGONIA</b>SCENT 2020</p>
       </div>
       <div class="col-sm">
         <h3 class="mb-1 mt-1">Site Map</h3>
@@ -36,5 +158,4 @@
       </div>
     </div>
   </div>
-</section>
-<!-- /.Footer -->
+</section> -->

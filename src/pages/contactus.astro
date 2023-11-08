@@ -1,0 +1,89 @@
+---
+import LayoutPaginas from '../layouts/LayoutPaginas.astro'
+import Titulo from '../components/paginas/Titulo.astro'
+
+---
+
+<LayoutPaginas title="Contact Us" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Contact Us' />
+
+    <div class="container px-3 px-lg-5">
+      <div class="row">
+
+        <div class="col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb mb-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="">Contact Us</a></li>
+            </ol>
+          </nav>
+          <h5 class="border-top pt-3"></h5>
+
+          <form  action="https://api.web3forms.com/submit" method="POST" id="form" class="contactform" name="sentMessage">
+            <input type="hidden" name="access_key" value="5f94035b-3d24-45ce-af5f-94379ab1b5a0" />
+            <input type="hidden" name="subject" value="Mensaje de www.patagoniascent.com" />
+            <input type="hidden" name="redirect" value="https://www.patagoniascent.com/contact-us.html" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+              <div class="row">
+                  <div class="form-group col-xs-12 mb-4">
+                      <input type="text" name="name" id="name" required class="form-control" placeholder="Name:">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="form-group col-xs-12 mb-4">
+                      <input type="email" name="email" id="email" type="email" required class="form-control" placeholder="E-mail:">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="form-group col-xs-12 mb-4">
+                      <textarea rows="5" name="message" id="message" maxlength="400" required class="form-control" placeholder="Message:"></textarea>
+                  </div>
+              </div>
+              <div id="success"></div>
+              <div class="row">
+                  <div class="form-group col-xs-12">
+                    <input id="submit" name="submit" type="submit" value="Send" class="rounded-0 float-end btn btn-primary btn-lg ">
+                  </div>
+              </div>
+        </form>
+             
+        </div>
+        
+        <div class="col-lg-6 mt-5 px-lg-5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item texto text-body-secondary py-3 ">
+              <i class="fa-solid fa-phone text-body-secondary"></i> - Tel: +54 2966 464845</li>
+            <li class="list-group-item py-3">
+              <i class="fa-brands fa-whatsapp text-body-secondary"></i><a href="https://wa.me/542966464845/" target="_blank" class="text-decoration-none text-body-secondary"> - WhatsApp</a>
+            </li>
+            <li class="list-group-item py-3">
+              <i class="fa-solid fa-envelope text-body-secondary"></i><a class="text-decoration-none text-body-secondary" href="mailto:patagoniascent@gmail.com"> - patagoniascent@gmail.com</a>
+            </li>
+            <li class="list-group-item text-body-secondary py-3">
+              <i class="fa-solid fa-map-location-dot"></i> - Leonel Terray 324, Z9301 El Chalten,<br> Santa Cruz, Argentina
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
+  .btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+  }
+  .btn-primary:hover{
+    background-color: #2e6da4;
+    border-color: #2e6da4;
+  }
+</style>
+

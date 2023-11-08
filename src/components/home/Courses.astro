@@ -1,0 +1,81 @@
+---
+
+---
+
+<section id="courses" class="courses">
+  <div class="container">
+    <div class="p-1">
+      <div id="course-shade-section">
+        <h3 class="fs-1 lh-1">Courses<br> in Patagonia</h3>
+        <ul class="menu-section list-grup ps-0 fs-4">
+          <li class="list-group-item"><a href="rock-climbing-course.html" title="Rock Climbing">Rock Climbing</a></li>
+          <li class="list-group-item"><a href="ice-climbing-course.html" title="Ice Climbing">Ice Climbing</a></li>
+					<li class="list-group-item"><a href="ski-mountaineering-course.html" title="Ski Mountaineering">Ski Mountaineering</a></li>
+        </ul>  
+        <p class="fs-6 mt-3 text-links">
+          We are also committed to carrying out mountain training. 
+          We will give you the basic tools to move safely and smoothly in the mountains. 
+          We offer courses and clinics of all levels according to the field in which you would like to train.
+        </p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+.courses {
+	height: 100vh;
+  min-height: 350px;
+	background-image: url("../img/index/secciones/courses.jpg");
+ 	background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+ 	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#course-shade-section {
+	position: relative;
+  background-color: rgba(0,0,0,0.5);
+  padding: 40px 50px 40px 50px;
+  width: fit-content;
+  width: -moz-fit-content; 
+  margin-top: 99px; 
+	text-align: left;
+	clip-path: polygon(0px 0px, 350px 0px, 321px 178px, 350px 495px, 351px 551px, 0px 549px);
+}
+
+.menu-section a {
+	font-family: MuseoSans300, sans-serif;
+  /* font-size: 26px; */
+  color: rgba(255,255,255,.9);
+  text-decoration: none;
+}
+.menu-section a:hover {
+	/*background-color: rgb(0,0,0,.6);*/
+	font-weight: bold;
+	color: rgba(255,255,255);
+  text-decoration: underline;
+}
+.text-links {
+	color: #FFFFFF;
+	font-family: MuseoSans100;
+  width: 250px;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+  .shape-shade-section {
+		position: relative;
+	  margin-top: 83px; 
+	  height: fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	  background-color: rgba(0,0,0,0.5);
+	  padding: 20px 40px 20px 15px;
+	  text-align: left;
+		margin-bottom: 50px;
+		clip-path: unset;
+	}
+}
+</style>
