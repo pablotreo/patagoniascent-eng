@@ -85,7 +85,7 @@ const logos = [
         {logos.map((logo) => (
           <li class="nav-item me-3">
             <a href={logo.href} target="_blanck" aria-current="page">
-              <img class="ml-4" src={logo.img} alt={logo.alt} />
+              <img class="ml-4" src={logo.img} alt={logo.alt} width="62px" height="64px"/>
             </a>
           </li>
         )
@@ -98,7 +98,7 @@ const logos = [
       <ul class="nav">
         {
           redes.map((red)=> (
-            <li class="nav-item mb-2"><a class={red.class} href={red.href}></a></li>
+            <li class="nav-item mb-2"><a class={red.class} href={red.href} aria-label={red.alt}></a></li>
           )
         )}
       </ul>
@@ -120,5 +120,8 @@ const logos = [
 </div>
 
 <style>
-
+  img {
+    height: auto;
+    width: 100%;
+  }
 </style>

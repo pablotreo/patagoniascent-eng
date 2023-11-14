@@ -16,23 +16,22 @@ interface Props {
 const { title, description, difficulty, duration, pax, time, link1, link2, href1, href2, hrefitinerary } = Astro.props;
 ---
 <div class="col-auto col-lg-6 py-2 px-md-0">
-  <nav aria-label="breadcrumb mb-2">
-    <ol class="breadcrumb">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb my-2">
       <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
       <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href={href1}>{link1}</a></li>
       <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href={href2}>{link2}</a></li>
     </ol>
   </nav>
-  <h5 class="fs-4 text-start text-body-secondary border-top pt-3">{title}</h5>
+  <h5 class="fs-4 fw-normal text-start text-body-secondary border-top pt-3">{title}</h5>
   <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-5">
     <p>{description}</p>
-    <p><b>Pax:</b> {pax}</p>
-    <p><b>Duration:</b> {duration}</p>
-    <p><b>Difficulty:</b> {difficulty}</p>
+    <p class="mb-1"><b>Pax:</b> {pax}</p>
+    <p class="mb-1"><b>Duration:</b> {duration}</p>
+    <p class="mb-1"><b>Difficulty:</b> {difficulty}</p>
     <p><b>Recommended time:</b> {time}</p>
-    <a href={hrefitinerary} target="_blank" class="fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button">
-      DOWNLOAD ITINERARY</a> <i role="button" class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
-    
+    <a href={hrefitinerary} target="_blank" class="fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button" aria-label="Download Itinerary">
+      DOWNLOAD ITINERARY</a> <i role="button" aria-label="Download" class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
   </div>    
 </div>
 <style>

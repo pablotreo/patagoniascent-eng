@@ -66,8 +66,8 @@ const logos = [
  
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-sm">
-      <a class="navbar-brand" href="/">
-        <img class="img-fluid" alt="patagoniascent" src="../img/paginas/logogris.png"></img>
+      <a class="navbar-brand" href="/" aria-label="home">
+        <img class="" alt="patagoniascent" src="../img/paginas/logogris.png" width="150px" height="75px"></img>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -76,20 +76,20 @@ const logos = [
         <ul class="navbar-nav align-items-lg-center">
           {
             links.map((link) => (
-            <li class="nav-item">
-              <a href={link.href} class="nav-link" aria-current="page">{link.name}</a>
+            <li class="nav-item px-2">
+              <a href={link.href} class="nav-link fs-6 fw-light" aria-label={link.name}>{link.name}</a>
             </li>
           )
           )}
 
         {redes.map((red) => (
               <li class="nav-item">
-                <a href={red.href} class="nav-link contacto" aria-current="page">
+                <a href={red.href} class="nav-link contacto px-2 fs-6 fw-light" aria-label={red.nombre}>
                   {red.nombre}
                 </a>
-                <ul class="ul-redes">
+                <ul class="ul-redes nav">
                   {red.links.map((link) => (
-                    <a href={link.href} target="_blanck" class={link.class} aria-current="page"/>
+                    <li class="nav-item"><a href={link.href} target="_blanck" class={link.class} aria-label={link.alt}/></li>
                     )
                   )}
                 </ul>
@@ -99,8 +99,8 @@ const logos = [
 
           {logos.map((logo) => (
               <li class="nav-item">
-                <a href={logo.href} target="_blanck" class="nav-link" aria-current="page">
-                  <img src={logo.img} alt={logo.alt} class="d-none d-lg-block" />
+                <a href={logo.href} target="_blanck" class="nav-link" aria-label={logo.alt}>
+                  <img src={logo.img} alt={logo.alt} class="d-none d-lg-block" width="62px" height="64px" />
                 </a>
               </li>
             )
@@ -112,9 +112,8 @@ const logos = [
   </nav>
 
   <style>
-    .nav-link {
-      font-size: 16px;
-      font-weight: 400;
+    .redes {
+      color: rgb(88,88,90);
     }
     .contacto {
       position: relative;
@@ -128,4 +127,8 @@ const logos = [
       position: absolute; 
       padding-left: 2px;
     }
+    .ul-redes > a {
+      display: inline-block;
+    }
+    
   </style>
