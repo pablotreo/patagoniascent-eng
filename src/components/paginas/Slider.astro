@@ -32,7 +32,7 @@ const { miArray } = Astro.props;
         miArray.map ((foto, index) => (
           <button type="button" data-bs-target="#carouselExample" data-bs-slide-to={index} 
           class={`${index === 0 ? 'active' : ''}`} aria-current="true" aria-label={`Slide ${index}`}>
-            <img src={foto.srcThum} class="d-flex" alt={foto.alt}/>
+            <img src={foto.srcThum} class="d-flex img-fluid" alt={foto.alt}/>
           </button>
         )
       )}
@@ -45,7 +45,8 @@ const { miArray } = Astro.props;
     width: max-content;
     height: auto;
   } 
-  /* .carousel-indicators{
-    margin-bottom: -18px;
-  } */
+  .carousel-indicators{
+    margin-top: -3px;
+    position: relative;
+  }
 </style>
