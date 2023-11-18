@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Mojon Rojo',
+    srcFotos: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojo1.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojothumb1.jpg',
+  },
+  {
+    alt: 'Cerro Mojon Rojo',
+    srcFotos: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojo2.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojothumb2.jpg',
+  },
+  {
+    alt: 'Cerro Mojon Rojo',
+    srcFotos: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojo3.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojothumb3.jpg',
+  },
+  {
+    alt: 'Cerro Mojon Rojo',
+    srcFotos: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojo4.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojothumb4.jpg',
+  },
+  {
+    alt: 'Cerro Mojon Rojo',
+    srcFotos: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojo6.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerromojonrojo/mojonrojothumb6.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Mountain | Cerro Mojon Rojo" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Mountain' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Mojon Rojo' 
+          description='This Peak, 2170msnm, is an accessible objective in the Fitz Roy range, but a classic adventure climbing in a great environment. From the summit there are excellent views of the Torre valley and its mountains. First, we get to the Blanco Glacier, then an easy climb with some challenging sections take us to the summit. A great entry level climb in Patagonia.'
+          difficulty=' Medium'
+          duration=' 3 days'
+          pax=' 1 or 2 people'
+          time=' October to March'
+          hrefitinerary='../itineraries/mountaineering/CerroMojonRojo.pdf'
+
+          link1=' Mountaineering'
+          href1='/#mountaineering'
+          link2=' Cerro Mojon Rojo'
+          href2='/mountaineering/cerro-mojon-rojo'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

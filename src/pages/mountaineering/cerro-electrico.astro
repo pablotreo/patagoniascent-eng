@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Eléctrico',
+    srcFotos: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectrico9.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectricothumb9.jpg',
+  },
+  {
+    alt: 'Cerro Eléctrico',
+    srcFotos: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectrico11.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectricothumb11.jpg',
+  },
+  {
+    alt: 'Cerro Eléctrico',
+    srcFotos: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectrico1.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectricothumb1.jpg',
+  },
+  {
+    alt: 'Cerro Eléctrico',
+    srcFotos: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectrico5.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectricothumb5.jpg',
+  },
+  {
+    alt: 'Cerro Eléctrico',
+    srcFotos: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectrico8.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerroelectrico/cerroelectricothumb8.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Mountain | Cerro Eléctrico" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Mountain' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Eléctrico' 
+          description='Between the Piedras Blancas Glacier and the river valley of the same name, this red mountain can be found. It was given its name, according to one version, due to the strong Patagonian winds that when hitting on the slopes of the valley simulate the thunder of an electrical storm. This mountain has a glacier in its upper part, 2260msnm, which we ascend to reach its summit. From there you can enjoy the majestic views of the ice field and in front of us the Cerro Fitz Roy stands imposing as a gift to our effort.'
+          difficulty=' Low'
+          duration=' 2 days'
+          pax=' 1 or 2 people'
+          time=' October to March'
+          hrefitinerary='../itineraries/mountaineering/CerroElectrico.pdf'
+
+          link1=' Mountaineering'
+          href1='/#mountaineering'
+          link2=' Cerro Eléctrico'
+          href2='/mountaineering/cerro-electrico'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

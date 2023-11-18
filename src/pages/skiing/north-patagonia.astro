@@ -1,0 +1,73 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'North Patagonia',
+    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument6.jpg',
+    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb6.jpg',
+  },
+  {
+    alt: 'North Patagonia',
+    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument2.jpg',
+    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb2.jpg',
+  },
+  {
+    alt: 'North Patagonia',
+    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument7.jpg',
+    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb7.jpg',
+  },
+  {
+    alt: 'North Patagonia',
+    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument8.jpg',
+    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb8.jpg',
+  },
+  {
+    alt: 'North Patagonia',
+    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument9.jpg',
+    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb9.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="North Patagonia Ski" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' North Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href=></a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href=></a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3"></h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p></p>
+            
+            <a href= target="_blank" class="fs-5 fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button" aria-label="Download Itinerary">DOWNLOAD ITINERARY</a>
+            <i class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
+          </div>    
+        </div>
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

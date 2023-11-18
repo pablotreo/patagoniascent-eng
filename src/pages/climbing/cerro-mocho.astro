@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '../img/paginas/slider/climbing/cerromocho/cerromocho01.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerromocho/cerromocho01MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '../img/paginas/slider/climbing/cerromocho/cerromocho02.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerromocho/cerromocho02MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '../img/paginas/slider/climbing/cerromocho/cerromocho03.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerromocho/cerromocho03MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '../img/paginas/slider/climbing/cerromocho/cerromocho04.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerromocho/cerromocho04MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '../img/paginas/slider/climbing/cerromocho/cerromocho05.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerromocho/cerromocho05MINI.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Cerro Mocho" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Mocho' 
+          description='Situated at the base of the great Cerro Torre is this particular formation that receives its name due to its flat summit. For those climbers who enjoy climbing a bit more demanding rock, this is a great goal, 1953 msnm. The beautiful cracks and dihedrals in very good granite are the dream of every climber and this climb caps it off with imposing views of the majestic Cerro Torre.'
+          difficulty=' High'
+          duration=' 3 days'
+          pax=' 1 or 2 people'
+          time=' November to March'
+          hrefitinerary='../itineraries/climbing/CerroMocho.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Cerro Mocho'
+          href2='/climbing/cerro-mocho'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

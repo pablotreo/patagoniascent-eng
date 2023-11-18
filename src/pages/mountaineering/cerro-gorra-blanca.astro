@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Gorra Blanca',
+    srcFotos: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablanca1.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablancathumb1.jpg',
+  },
+  {
+    alt: 'Cerro Gorra Blanca',
+    srcFotos: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablanca2.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablancathumb2.jpg',
+  },
+  {
+    alt: 'Cerro Gorra Blanca',
+    srcFotos: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablanca6.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablancathumb6.jpg',
+  },
+  {
+    alt: 'Cerro Gorra Blanca',
+    srcFotos: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablanca7.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablancathumb7.jpg',
+  },
+  {
+    alt: 'Cerro Gorra Blanca',
+    srcFotos: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablanca8.jpg',
+    srcThum: '../img/paginas/slider/mountaineering/cerrogorrablanca/cerrogorrablancathumb8.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Mountain | Cerro Gorra Blanca" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Mountain' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Gorra Blanca' 
+          description='Immersed in the southern Patagonian Ice Field is this white mountain, 2907msnm. It is of particular beauty, stunning views and battles characteristic Patagonian climate due to its location. The strong winds of the northwest loaded with humidity form the characteristic "Ice Mushroom" that make this a great challenge for those daring and enthusiastic climbers to live new experiences.'
+          difficulty=' Medium'
+          duration=' 4 days'
+          pax=' 1 or 2 people'
+          time=' October to March'
+          hrefitinerary='../itineraries/mountaineering/CerroGorraBlanca.pdf'
+
+          link1=' Mountaineering'
+          href1='/#mountaineering'
+          link2=' Cerro Gorra Blanca'
+          href2='/mountaineering/cerro-gorra-blanca'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+
+</style>
+
+

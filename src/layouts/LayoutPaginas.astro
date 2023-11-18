@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 import '../styles/paginas.css';
 import FooterPaginas from '../components/layouts/FooterPaginas.astro';
 import NavbarPaginas from '../components/layouts/NavbarPaginas.astro'
@@ -35,6 +36,33 @@ const makeTitle = title
 
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+		<SEO
+			title="A Very Descriptive Title"
+			description="A heavily optimized description full of well-researched keywords."
+			openGraph={{
+				basic: {
+					title: "A Very Descriptive Title",
+					type: "A type.",
+					image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+				}
+			}}
+			twitter={{
+				creator: "@jonasmerlins1"
+			}}
+			extend={{
+				// extending the default link tags
+				link: [{ rel: "icon", href: "/favicon.ico" }],
+				// extending the default meta tags
+				meta: [
+					{
+						name: "twitter:image",
+						content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+					},
+					{ name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+					{ name: "twitter:description", content: "Agent" },
+				],
+			}}
+		/>
 	</head>
 	<body>
 

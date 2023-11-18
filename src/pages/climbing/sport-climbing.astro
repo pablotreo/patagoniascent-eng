@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Sport Climbing',
+    srcFotos: '../img/paginas/slider/climbing/sportclimbing/escaladaroca6.jpg',
+    srcThum: '../img/paginas/slider/climbing/sportclimbing/escaladarocathumb6.jpg',
+  },
+  {
+    alt: 'Sport Climbing',
+    srcFotos: '../img/paginas/slider/climbing/sportclimbing/escaladaroca2.jpg',
+    srcThum: '../img/paginas/slider/climbing/sportclimbing/escaladarocathumb2.jpg',
+  },
+  {
+    alt: 'Sport Climbing',
+    srcFotos: '../img/paginas/slider/climbing/sportclimbing/escaladaroca3.jpg',
+    srcThum: '../img/paginas/slider/climbing/sportclimbing/escaladarocathumb3.jpg',
+  },
+  {
+    alt: 'Sport Climbing',
+    srcFotos: '../img/paginas/slider/climbing/sportclimbing/escaladaroca4.jpg',
+    srcThum: '../img/paginas/slider/climbing/sportclimbing/escaladarocathumb4.jpg',
+  },
+  {
+    alt: 'Sport Climbing',
+    srcFotos: '../img/paginas/slider/climbing/sportclimbing/escaladaroca7.jpg',
+    srcThum: '../img/paginas/slider/climbing/sportclimbing/escaladarocathumb7.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Sport Climbing" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Sport Climbing' 
+          description='A good activity to do in the beginner rock climbing areas very close to El Chalten. No previous experience is needed in these areas but for those who do have experience there is also a good opportunity to venture into climbing multi pitch routes (ie climbing walls of more than 60m with the possibility of climbing up to 150 meters in height).'
+          difficulty=' Low (climbing either single-pitch or multi-pitch with possibility to increase the difficulty as desired)'
+          duration=' 1 day or 1/2 day'
+          pax=' 1 to 4 people (single-pitch) and 1 or 2 people (multi-pitch)'
+          time=' September - April'
+          hrefitinerary='../itineraries/climbing/SportClimbing.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Sport Climbing'
+          href2='/climbing/sport-climbing'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

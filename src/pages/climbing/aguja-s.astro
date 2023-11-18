@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Aguja S',
+    srcFotos: '../img/paginas/slider/climbing/agujas/aguja_s1.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujas/aguja_sMINI1.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '../img/paginas/slider/climbing/agujas/aguja_s2.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujas/aguja_sMINI2.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '../img/paginas/slider/climbing/agujas/aguja_s3.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujas/aguja_sMINI3.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '../img/paginas/slider/climbing/agujas/aguja_s4.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujas/aguja_sMINI4.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '../img/paginas/slider/climbing/agujas/aguja_s5.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujas/aguja_sMINI5.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Aguja S" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Aguja S' 
+          description='The Aguja de la S, 2335msnm, is one of the Fitz Roy Range spires, with stunning views of the Cerro Torre valley from its summit. On one of the most accessible climbs of this range, we´ll choose between two optional routes: the "Josh Aike"  (200 meters, 6a +) and the "Austrian" (350 meters, 5+).'
+          difficulty=' High'
+          duration=' 3 days'
+          pax=' 1 or 2 people'
+          time=' November to March'
+          hrefitinerary='../itineraries/climbing/AgujaS.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Aguja S'
+          href2='/climbing/aguja-s'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Aguja Guillaumet',
+    srcFotos: '../img/paginas/slider/climbing/agujaguillaument/guillaument6.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujaguillaument/guillaumentthumb6.jpg',
+  },
+  {
+    alt: 'Aguja Guillaumet',
+    srcFotos: '../img/paginas/slider/climbing/agujaguillaument/guillaument2.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujaguillaument/guillaumentthumb2.jpg',
+  },
+  {
+    alt: 'Aguja Guillaumet',
+    srcFotos: '../img/paginas/slider/climbing/agujaguillaument/guillaument7.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujaguillaument/guillaumentthumb7.jpg',
+  },
+  {
+    alt: 'Aguja Guillaumet',
+    srcFotos: '../img/paginas/slider/climbing/agujaguillaument/guillaument8.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujaguillaument/guillaumentthumb8.jpg',
+  },
+  {
+    alt: 'Aguja Guillaumet',
+    srcFotos: '../img/paginas/slider/climbing/agujaguillaument/guillaument9.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujaguillaument/guillaumentthumb9.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Aguja Guillaumet" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Aguja Guillaumet' 
+          description='This satellite needle of the Fitz Roy range is often one of the first serious objectives to be carried out in Patagonia. A great adventure for those who want to climb these challenging mountain, 2579msnm. It has different routes depending on the time of year, as well as the interest of the climber. Forests, moraine and glaciers are some of the terrains we need to tackle to reach this summit.'
+          difficulty=' High'
+          duration=' 3 days'
+          pax=' 1 or 2 people'
+          time=' November to March'
+          hrefitinerary='../itineraries/climbing/AgujaGuillaumet.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Aguja Guillaumet'
+          href2='/climbing/aguja-guillaumet'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

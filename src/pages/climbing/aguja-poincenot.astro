@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Aguja Poincenot',
+    srcFotos: '../img/paginas/slider/climbing/agujapoincenot/agujapoinc1.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujapoincenot/agujapoincMINI1.jpg',
+  },
+  {
+    alt: 'Aguja Poincenot',
+    srcFotos: '../img/paginas/slider/climbing/agujapoincenot/agujapoinc6.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujapoincenot/agujapoincMINI6.jpg',
+  },
+  {
+    alt: 'Aguja Poincenot',
+    srcFotos: '../img/paginas/slider/climbing/agujapoincenot/agujapoinc4.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujapoincenot/agujapoincMINI4.jpg',
+  },
+  {
+    alt: 'Aguja Poincenot',
+    srcFotos: '../img/paginas/slider/climbing/agujapoincenot/agujapoinc7.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujapoincenot/agujapoincMINI7.jpg',
+  },
+  {
+    alt: 'Aguja Poincenot',
+    srcFotos: '../img/paginas/slider/climbing/agujapoincenot/agujapoinc5.jpg',
+    srcThum: '../img/paginas/slider/climbing/agujapoincenot/agujapoincMINI5.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Aguja Poincenot" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Aguja Poincenot' 
+          description="It's importance as the third highest tower in the region, 3002msnm, in addition to it's aesthetic silhouette, is one of the great objectives in Patagonia. Demanding for its variety of terrain needed to overcome in order to conquer its pointy summit. Great glaciers, snowfields and cracks in perfect granite makes it unique among the great mountains of Patagonia."
+          difficulty=' High'
+          duration=' 3 days'
+          pax=' 1 or 2 people'
+          time=' November to March'
+          hrefitinerary='../itineraries/climbing/AgujaPoincenot.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Aguja Poincenot'
+          href2='/climbing/aguja-poincenot'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
