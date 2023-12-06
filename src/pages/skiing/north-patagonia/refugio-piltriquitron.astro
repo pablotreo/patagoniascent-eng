@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Refugio Piltriquitron',
+    srcFotos: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitron3.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitronThumb3.jpg',
+  },
+  {
+    alt: 'Refugio Piltriquitron',
+    srcFotos: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitron10.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitronThumb10.jpg',
+  },
+  {
+    alt: 'Refugio Piltriquitron',
+    srcFotos: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitron6.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitronThumb6.jpg',
+  },
+  {
+    alt: 'Refugio Piltriquitron',
+    srcFotos: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitron2.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitronThumb2.jpg',
+  },
+  {
+    alt: 'Refugio Piltriquitron',
+    srcFotos: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitron9.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiopiltriquitron/esquipiltriquitronThumb9.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Refugio Piltriquitron" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Refugio Piltriquitron Ski Tour' 
+          description='Located at 120 km south from Bariloche, there is El Bolson, a lovely little town surrounded by mountains.One of them is Cerro Piltriquitron, which has a mountain hut. From there we can ski Cerro Huemul and Piltriquitron.'
+          difficulty=' Easy / Medium'
+          duration=' 1 or 2 days'
+          pax=' 1 o 4 persons'
+          time=' July to Octoberr'
+          hrefitinerary='/itineraries/skiing/SkiRefugioPiltriquitron.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' North Patagonia'
+          href2='/skiing/north-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

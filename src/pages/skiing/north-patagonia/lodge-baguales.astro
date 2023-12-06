@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Lodge Baguales',
+    srcFotos: '/img/paginas/slider/skiing/lodgebaguales/EsquiBaguales8.jpg',
+    srcThum: '/img/paginas/slider/skiing/lodgebaguales/EsquiBagualesThumb8.jpg',
+  },
+  {
+    alt: 'Lodge Baguales',
+    srcFotos: '/img/paginas/slider/skiing/lodgebaguales/EsquiBaguales2.jpg',
+    srcThum: '/img/paginas/slider/skiing/lodgebaguales/EsquiBagualesThumb2.jpg',
+  },
+  {
+    alt: 'Lodge Baguales',
+    srcFotos: '/img/paginas/slider/skiing/lodgebaguales/EsquiBaguales7.jpg',
+    srcThum: '/img/paginas/slider/skiing/lodgebaguales/EsquiBagualesThumb7.jpg',
+  },
+  {
+    alt: 'Lodge Baguales',
+    srcFotos: '/img/paginas/slider/skiing/lodgebaguales/EsquiBaguales5.jpg',
+    srcThum: '/img/paginas/slider/skiing/lodgebaguales/EsquiBagualesThumb5.jpg',
+  },
+  {
+    alt: 'Lodge Baguales',
+    srcFotos: '/img/paginas/slider/skiing/lodgebaguales/EsquiBaguales9.jpg',
+    srcThum: '/img/paginas/slider/skiing/lodgebaguales/EsquiBagualesThumb9.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Lodge Baguales" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Lodge Baguales Ski Tour' 
+          description='Baguales is a mountain lodge located in the South east of San Carlos de Bariloche. Because of it altitude and location it brings very good snow conditions. There are different important mountains in the area with multiple ski options and ski tours like Cerro Villegas and Cerro Ciruela. There are also ski options in Lengas forest. The lodge also offers the opportunity of different smaller huts that can be connected depending on the tour decided to do.'
+          difficulty=' Low / Medium / High'
+          duration=' 2 days'
+          pax=' 1 o 4 persons'
+          time=' July to September'
+          hrefitinerary='/itineraries/skiing/SkiBaguales.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' North Patagonia'
+          href2='/skiing/north-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

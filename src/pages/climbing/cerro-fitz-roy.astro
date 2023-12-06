@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '../img/paginas/slider/climbing/cerrofitzroy/fitzroy1.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrofitzroy/fitzroythumb1.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '../img/paginas/slider/climbing/cerrofitzroy/fitzroy2.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrofitzroy/fitzroythumb2.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '../img/paginas/slider/climbing/cerrofitzroy/fitzroy6.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrofitzroy/fitzroythumb6.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '../img/paginas/slider/climbing/cerrofitzroy/fitzroy7.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrofitzroy/fitzroythumb7.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '../img/paginas/slider/climbing/cerrofitzroy/fitzroy5.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrofitzroy/fitzroythumb5.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Cerro Fitz Roy" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Fitz Roy' 
+          description='The great colossal of Patagonia, 3445msnm, is one of the most coveted mountains by great climbers from all over the world. Routes such as Franco-Argentina, Supercanaleta, Californiana and Afanasief are some of the most attempted and climbed on this great granite mountain.'
+          difficulty=' Very High'
+          duration=' 4 to 5 days'
+          pax=' 1 person'
+          time=' November to March'
+          hrefitinerary='../itineraries/climbing/CerroFitzRoy.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Cerro Fitz Roy'
+          href2='/climbing/cerro-fitz-roy'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Ski Tour in Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/tourpatagonia/tourpatagonia1.jpg',
+    srcThum: '/img/paginas/slider/skiing/tourpatagonia/tourpatagoniathumb1.jpg',
+  },
+  {
+    alt: 'Ski Tour in Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/tourpatagonia/tourpatagonia6.jpg',
+    srcThum: '/img/paginas/slider/skiing/tourpatagonia/tourpatagoniathumb6.jpg',
+  },
+  {
+    alt: 'Ski Tour in Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/tourpatagonia/tourpatagonia3.jpg',
+    srcThum: '/img/paginas/slider/skiing/tourpatagonia/tourpatagoniathumb3.jpg',
+  },
+  {
+    alt: 'Ski Tour in Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/tourpatagonia/tourpatagonia4.jpg',
+    srcThum: '/img/paginas/slider/skiing/tourpatagonia/tourpatagoniathumb4.jpg',
+  },
+  {
+    alt: 'Ski Tour in Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/tourpatagonia/tourpatagonia2.jpg',
+    srcThum: '/img/paginas/slider/skiing/tourpatagonia/tourpatagoniathumb2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Ski Tour in Patagonia" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Ski Tour in Patagonia' 
+          description='This ski trip through Patagonia will take us to different places, in search of the best conditions of snow and weather. Fantastic views of this area will be our reward for the effort made to achieve these summits. The Program is flexible and will adapt to the weather conditions and the level of the group. This may alter the order of the places to visit.'
+          difficulty=' Low to High (as a reference you should be able to ski double diamonds)'
+          duration=' 15 days. (11 days of activity plus 4 extra days for bad weather and logistics)'
+          pax=' 1 o 3 persons'
+          time=' October'
+          hrefitinerary='/itineraries/skiing/SkiTourPatagonia.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' Ski Tour in Patagonia'
+          href2='/skiing/ski-tour-in-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

@@ -16,6 +16,11 @@ const links = [
     isExternal: 'false',
   },
   {
+    name: 'skiing',
+    href: '/#skiing',
+    isExternal: 'false',
+  },
+  {
     name: 'courses',
     href: '/#courses',
     isExternal: 'false',
@@ -54,12 +59,12 @@ const redes = [
 ]
 const logos = [
   {
-    img: '../img/paginas/aagmgris.png',
+    img: '/img/paginas/aagmgris.png',
     href: 'http://www.ivbv.info/en/home.html',
     alt: 'AAGM',
   },
   {
-    img: '../img/paginas/uiagmgris.png',
+    img: '/img/paginas/uiagmgris.png',
     href: 'http://www.aagm.com.ar/',
     alt: 'UIAGM',
   }
@@ -73,14 +78,14 @@ const logos = [
       <a href="/" class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none">
         <h5 class="fw-light text-body-secondary"><span class="fw-medium">PATAGONIA</span>SCENT</h5>
       </a>
-      <p class="text-body-secondary">Copyright &copy; {new Date().getFullYear()}<br>All rights reserved.</p>
+      <p class="text-body-secondary fw-light">Copyright &copy; {new Date().getFullYear()}<br>All rights reserved.</p>
     </div>
 
     <div class="col mb-3">
     </div>
 
     <div class="col mb-3">
-      <h6 class="fw-medium text-body-secondary">PARTNERS</h6>
+      <h6 class="fw-light text-body-secondary">PARTNERS</h6>
       <ul class="nav">
         {logos.map((logo) => (
           <li class="nav-item me-3">
@@ -94,7 +99,7 @@ const logos = [
     </div>
 
     <div class="col mb-3">
-      <h6 class="fw-medium text-body-secondary">FOLLOW US</h6>
+      <h6 class="fw-light text-body-secondary">FOLLOW US</h6>
       <ul class="nav">
         {
           redes.map((red)=> (
@@ -105,11 +110,11 @@ const logos = [
     </div>
 
     <div class="col mb-3">
-      <h6 class="fw-medium text-body-secondary">SITE MAP</h6>
+      <h6 class="fw-light text-body-secondary">SITE MAP</h6>
       <ul class="nav flex-column">
         {
           links.map((link)=>(
-          <li class="nav-item mb-0"><a href={link.href} class="nav-link p-0 text-body-secondary">{link.name}</a></li>
+          <li class="nav-item mb-0"><a href={link.href} class="nav-link p-0 text-body-secondary fw-light">{link.name}</a></li>
           )
         )}
       </ul>

@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Full Day Ski Bariloche',
+    srcFotos: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDay8.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDayThumb8.jpg',
+  },
+  {
+    alt: 'Full Day Ski Bariloche',
+    srcFotos: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDay1.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDayThumb1.jpg',
+  },
+  {
+    alt: 'Full Day Ski Bariloche',
+    srcFotos: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDay6.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDayThumb6.jpg',
+  },
+  {
+    alt: 'Full Day Ski Bariloche',
+    srcFotos: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDay4.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDayThumb4.jpg',
+  },
+  {
+    alt: 'Full Day Ski Bariloche',
+    srcFotos: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDay2.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaybariloche/EsquiFullDayThumb2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Full Day Ski Bariloche" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Full Day Ski Tour in Bariloche' 
+          description=' We offer a program to enjoy the mountains around Bariloche during a full day were we be able to combine nice views with excellent ski runs. Bariloche area offers multiple options, depending on weather and snow conditions we can choose between:   Valle del Van Titter, Cerro Challhuaco, Cerro Goye, Cerro López, Siete Colores.'
+          difficulty='  Easy / Medium'
+          duration=' 1 days'
+          pax=' 1 o 4 persons'
+          time=' July to Octubre'
+          hrefitinerary='/itineraries/skiing/SkiFullDayBariloche.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' North Patagonia'
+          href2='/skiing/north-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

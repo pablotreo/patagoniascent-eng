@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '../img/paginas/slider/climbing/cerrotorre/cerrotorre1.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrotorre/cerrotorrethumb1.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '../img/paginas/slider/climbing/cerrotorre/cerrotorre14.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrotorre/cerrotorrethumb14.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '../img/paginas/slider/climbing/cerrotorre/cerrotorre11.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrotorre/cerrotorrethumb11.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '../img/paginas/slider/climbing/cerrotorre/cerrotorre8.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrotorre/cerrotorrethumb8.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '../img/paginas/slider/climbing/cerrotorre/cerrotorre13.jpg',
+    srcThum: '../img/paginas/slider/climbing/cerrotorre/cerrotorrethumb13.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Climb | Cerro Torre" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Climb' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Torre' 
+          description='The mountain considered for many years invincible, 3102msnm, where no man could put his feet on top. The most aesthetic mountain in Patagonia and the world. With a lot of stories of great climbers this is the most precious goal for every climber.'
+          difficulty=' High'
+          duration=' 5 to 7 days'
+          pax=' 1 person'
+          time=' November to March'
+          hrefitinerary='../itineraries/climbing/CerroTorre.pdf'
+
+          link1=' Climbing'
+          href1='/#climbing'
+          link2=' Cerro Torre'
+          href2='/climbing/cerro-torre'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

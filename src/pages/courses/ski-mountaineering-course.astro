@@ -1,0 +1,76 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Mountain Ski Course',
+    srcFotos: '/img/paginas/slider/courses/ski-mountaineering/cursoski5.jpg',
+    srcThum: '/img/paginas/slider/courses/ski-mountaineering/cursoskithumb5.jpg',
+  },
+  {
+    alt: 'Mountain Ski Course',
+    srcFotos: '/img/paginas/slider/courses/ski-mountaineering/cursoski7.jpg',
+    srcThum: '/img/paginas/slider/courses/ski-mountaineering/cursoskithumb7.jpg',
+  },
+  {
+    alt: 'Mountain Ski Course',
+    srcFotos: '/img/paginas/slider/courses/ski-mountaineering/cursoski4.jpg',
+    srcThum: '/img/paginas/slider/courses/ski-mountaineering/cursoskithumb4.jpg',
+  },
+  {
+    alt: 'Mountain Ski Course',
+    srcFotos: '/img/paginas/slider/courses/ski-mountaineering/cursoski8.jpg',
+    srcThum: '/img/paginas/slider/courses/ski-mountaineering/cursoskithumb8.jpg',
+  },
+  {
+    alt: 'Mountain Ski Course',
+    srcFotos: '/img/paginas/slider/courses/ski-mountaineering/cursoski2.jpg',
+    srcThum: '/img/paginas/slider/courses/ski-mountaineering/cursoskithumb2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Courses | Mountain Ski Course" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Courses' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href=/#courses>Courses</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href=/courses/ice-climbing-course>Mountaine Ski Course</a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">Mountain Ski Course</h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p>
+              The aim of this course is to introduce the Alpine skiing enthusiast into the world of ski mountaineering. We will form and build a solid base in regards to safety knowledge in the mountain environment. We will expand the sporting goals of people who practice this winter sport.</br>
+              <b>Course duration:</b></br>
+              - 2 theoretical classes</br>
+              - 5 full-day ski trips
+              </p>
+              <a href="/itineraries/courses/MountainSkiCourse.pdf" target="_blank" class="fs-5 fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button" aria-label="Download Itinerary">DOWNLOAD ITINERARY</a>
+              <i class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
+          </div>    
+        </div>
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
+</style>

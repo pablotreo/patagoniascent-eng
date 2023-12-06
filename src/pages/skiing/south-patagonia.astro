@@ -1,0 +1,80 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'South Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur7.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb7.jpg',
+  },
+  {
+    alt: 'South Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur8.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb8.jpg',
+  },
+  {
+    alt: 'South Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur9.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb9.jpg',
+  },
+  {
+    alt: 'South Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur2.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb2.jpg',
+  },
+  {
+    alt: 'South Patagonia',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur10.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb10.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="South Patagonia Ski" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' South Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/#skiing">Skiing</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/skiing/south-patagonia">South Patagonia</a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">El Chalten and Surroundings</h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p>El Chaltén is one of the best and least explored areas of ski mountaineering in Argentina with a long winter season and magnificent snow. The great variety of places, orientations and inclinations it is possible to ski even in the Patagonian climate. Skiing in the midst of the great mountains, such as Fitz Roy and Cerro Torre, make it unique.</p>
+            <ul class="list-unstyled">
+            <li><a href="/skiing/south-patagonia/cerro-vespignani" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Cerro Vespignani</a></li>
+            <li><a href="/skiing/south-patagonia/cerro-creston-valley" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Cerro Crestón Valley</a></li>
+            <li><a href="/skiing/south-patagonia/mosquito-valley" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Mosquito Valley</a></li>
+            <li><a href="/skiing/south-patagonia/cerro-electrico" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Cerro Eléctrico</a></li>
+            <li><a href="/skiing/south-patagonia/cerro-madsen" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Cerro Madsen</a></li>
+            <li><a href="/skiing/south-patagonia/full-day-ski-tour-chalten" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Full Day Ski in Chalten</a></li>
+            <li><a href="/skiing/south-patagonia/weekend-ski-tour-chalten" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Weekend Ski in Chalten</a></li>
+            <li><a href="/skiing/south-patagonia/one-week-ski-tour-in-chalten" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>One Week Ski in Chalten</a></li>
+          </ul>
+
+          </div>    
+        </div>
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Full Day Ski Tour Chalten',
+    srcFotos: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChalten5.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChaltenThumb5.jpg',
+  },
+  {
+    alt: 'Full Day Ski Tour Chalten',
+    srcFotos: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChalten1.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChaltenThumb1.jpg',
+  },
+  {
+    alt: 'Full Day Ski Tour Chalten',
+    srcFotos: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChalten3.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChaltenThumb3.jpg',
+  },
+  {
+    alt: 'Full Day Ski Tour Chalten',
+    srcFotos: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChalten4.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChaltenThumb4.jpg',
+  },
+  {
+    alt: 'Full Day Ski Tour Chalten',
+    srcFotos: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChalten8.jpg',
+    srcThum: '/img/paginas/slider/skiing/fulldaychalten/EsquiFullDayChaltenThumb8.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Full Day Ski Tour Chalten" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Full Day Ski Tour in Chalten' 
+          description='With an abundance of magnificent snow and great weather from July to October, ski touring in El Chalten is a wonderful experience. And for a full day, I would like to take you to the best skiing spots in the area. Along with the great ski touring spots, the views you will get in El Chalten are spectacular. Throughout the area, you will get to reach several amazing viewpoints that will show you the undeniable natural beauty of Argentinean Patagonia.'
+          difficulty=' Easy / Medium'
+          duration=' 1 day'
+          pax=' 1 o 4 persons'
+          time=' July to October'
+          hrefitinerary='/itineraries/skiing/SkiFullDayChalten.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' South Patagonia'
+          href2='/skiing/south-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

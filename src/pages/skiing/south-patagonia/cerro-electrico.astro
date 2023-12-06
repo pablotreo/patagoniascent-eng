@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Electrico',
+    srcFotos: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectrico5.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectricoThumb5.jpg',
+  },
+  {
+    alt: 'Cerro Electrico',
+    srcFotos: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectrico8.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectricoThumb8.jpg',
+  },
+  {
+    alt: 'Cerro Electrico',
+    srcFotos: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectrico10.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectricoThumb10.jpg',
+  },
+  {
+    alt: 'Cerro Electrico',
+    srcFotos: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectrico9.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectricoThumb9.jpg',
+  },
+  {
+    alt: 'Cerro Electrico',
+    srcFotos: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectrico1.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerroelectrico/EsquiCerroElectricoThumb1.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Cerro Electrico" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Electrico Ski Tour' 
+          description='The Cerro Electrico is an absolutely stunning sight. Positioned between the Piedras Blancas Glacier and the electric river valley, the red colored mountain will take your breath away. However, during this full-day trip, you will not just get to admire the peak, you will get to ascend and descend the mountain on a ski touring expedition you will never forget.'
+          difficulty=' Easy / Medium'
+          duration=' 1 day'
+          pax=' 1 o 4 persons'
+          time=' July to October'
+          hrefitinerary='/itineraries/skiing/SkiCerroElectrico.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' South Patagonia'
+          href2='/skiing/south-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

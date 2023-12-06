@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Madsen',
+    srcFotos: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsen1.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsenThumb1.jpg',
+  },
+  {
+    alt: 'Cerro Madsen',
+    srcFotos: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsen4.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsenThumb4.jpg',
+  },
+  {
+    alt: 'Cerro Madsen',
+    srcFotos: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsen5.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsenThumb5.jpg',
+  },
+  {
+    alt: 'Cerro Madsen',
+    srcFotos: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsen7.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsenThumb7.jpg',
+  },
+  {
+    alt: 'Cerro Madsen',
+    srcFotos: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsen8.jpg',
+    srcThum: '/img/paginas/slider/skiing/cerromadsen/EsquiCerroMadsenThumb8.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Cerro Madsen" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Madsen Ski Tour' 
+          description='Located in Argentina’s southern Patagonia, near El Chalten, the Cerro Madsen’s lower passage is full of great snow. As a result, the ski touring available in the area is spectacular. Furthermore, the views you will get, particularly of the famed Fitz Roy peak, are spellbinding.'
+          difficulty=' Easy / Medium'
+          duration=' 1 day'
+          pax=' 1 o 4 persons'
+          time=' July to October'
+          hrefitinerary='/itineraries/skiing/SkiCerroMadsen.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' South Patagonia'
+          href2='/skiing/south-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

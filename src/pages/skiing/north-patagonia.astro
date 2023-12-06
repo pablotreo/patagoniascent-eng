@@ -1,34 +1,33 @@
 ---
 import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
-import Content from '../../components/paginas/Content.astro'
 import Titulo from '../../components/paginas/Titulo.astro'
 import Slider from '../../components/paginas/Slider.astro'
 
 const fotos = [
   {
     alt: 'North Patagonia',
-    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument6.jpg',
-    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb6.jpg',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte1.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb1.jpg',
   },
   {
     alt: 'North Patagonia',
-    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument2.jpg',
-    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb2.jpg',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte7.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb7.jpg',
   },
   {
     alt: 'North Patagonia',
-    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument7.jpg',
-    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb7.jpg',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte3.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb3.jpg',
   },
   {
     alt: 'North Patagonia',
-    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument8.jpg',
-    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb8.jpg',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte11.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb11.jpg',
   },
   {
     alt: 'North Patagonia',
-    srcFotos: '../img/paginas/slider/skiing/agujaguillaument/guillaument9.jpg',
-    srcThum: '../img/paginas/slider/skiing/agujaguillaument/guillaumentthumb9.jpg',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte12.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb12.jpg',
   },
 ]
 
@@ -46,16 +45,24 @@ const fotos = [
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-2">
               <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
-              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href=></a></li>
-              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href=></a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/#skiing">Skiing</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/skiing/north-patagonia">North Patagonia</a></li>
             </ol>
           </nav>
-          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3"></h3>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">Bariloche and Surroundings</h3>
           <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
-            <p></p>
-            
-            <a href= target="_blank" class="fs-5 fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button" aria-label="Download Itinerary">DOWNLOAD ITINERARY</a>
-            <i class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
+            <p>This ski trip in the area of Bariloche and its surroundings will take us to different places in search of the best snow conditions and weather. Fantastic views of this region will be our reward for the effort made. Some of the possibilities in Bariloche include Cerro López, Frey, Baguales and Frontera.</p>
+            <ul class="list-unstyled">
+            <li><a href="/skiing/north-patagonia/refugio-frey-ski" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary">
+              <i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Refugio Frey
+            </a></li>
+            <li><a href="/skiing/north-patagonia/refugio-jakob" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Refugio Jakob</a></li>
+            <li><a href="/skiing/north-patagonia/refugio-lopez" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Refugio Lopez</a></li>
+            <li><a href="/skiing/north-patagonia/lodge-baguales" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Lodge Baguales</a></li>
+            <li><a href="/skiing/north-patagonia/refugio-piltriquitron" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Refugio Piltriquitron</a></li>
+            <li><a href="/skiing/north-patagonia/full-day-ski-tour-bariloche" class="fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link text-decoration-none" role="button" aria-label="Download Itinerary"><i class="fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i>Full Day Ski Tour in Bariloche</a></li>
+          </ul>
+
           </div>    
         </div>
 

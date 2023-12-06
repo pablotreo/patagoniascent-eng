@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Refugio Jakob',
+    srcFotos: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakob3.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakobThumb3.jpg',
+  },
+  {
+    alt: 'Refugio Jakob',
+    srcFotos: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakob1.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakobThumb1.jpg',
+  },
+  {
+    alt: 'Refugio Jakob',
+    srcFotos: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakob6.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakobThumb6.jpg',
+  },
+  {
+    alt: 'Refugio Jakob',
+    srcFotos: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakob4.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakobThumb4.jpg',
+  },
+  {
+    alt: 'Refugio Jakob',
+    srcFotos: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakob5.jpg',
+    srcThum: '/img/paginas/slider/skiing/refugiojakob/esquirefugiojakobThumb5.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | Refugio Jakob" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Refugio Jakob Ski Tour' 
+          description='Refugio General San Martin, well known as Jakob, is one of the biggest huts in the area. Reconstructed completely in 2017 after it was turned into ashes on a fire. Considering that the access to the hut is longer compared to other options, is expected to find less people in the area during winter. However  it bring very nice and challenge ski options like Cela, Constructores, Cuernos del Diablo.'
+          difficulty=' Medium / High'
+          duration=' 3 days'
+          pax=' 1 o 4 persons'
+          time=' July to September'
+          hrefitinerary='/itineraries/skiing/SkiRefugioJakob.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' North Patagonia'
+          href2='/skiing/north-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

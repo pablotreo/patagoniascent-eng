@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../../layouts/LayoutPaginas.astro'
+import Content from '../../../components/paginas/Content.astro'
+import Titulo from '../../../components/paginas/Titulo.astro'
+import Slider from '../../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'One Week Ski Tour in Chalten',
+    srcFotos: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChalten3.jpg',
+    srcThum: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChaltenThumb3.jpg',
+  },
+  {
+    alt: 'One Week Ski Tour in Chalten',
+    srcFotos: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChalten1.jpg',
+    srcThum: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChaltenThumb1.jpg',
+  },
+  {
+    alt: 'One Week Ski Tour in Chalten',
+    srcFotos: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChalten7.jpg',
+    srcThum: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChaltenThumb7.jpg',
+  },
+  {
+    alt: 'One Week Ski Tour in Chalten',
+    srcFotos: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChalten6.jpg',
+    srcThum: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChaltenThumb6.jpg',
+  },
+  {
+    alt: 'One Week Ski Tour in Chalten',
+    srcFotos: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChalten2.jpg',
+    srcThum: '/img/paginas/slider/skiing/oneweekskichalten/EsquiUnaSemanaChaltenThumb2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Patagonia Ski | One Week Ski Tour in Chalten" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Patagonia Ski' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='One Week Ski Tour in Chalten' 
+          description='El Chaltén is one of the best and unexplored mountain ski areas in Argentina, with a wide winter season and magnificent snow. The great variety of places, orientations and inclinations allow the practice of skiing in the Patagonian climate. Skiing in the middle of the great mountains, such as the Fitz Roy and Cerro Torre make it unique. A week of skiing, in the best snow in Patagonia and enjoying the small town of El Chaltén is a great objective of your adventure. Cerro Vespignani, Mosquito, Crestón and Madsen are some of the places to visit in Patagonia.'
+          difficulty=' Easy / Medium'
+          duration=' 7 days'
+          pax=' 1 o 4 persons'
+          time=' July to October'
+          hrefitinerary='/itineraries/skiing/SkiAllWeek.pdf'
+
+          link1=' Skiing'
+          href1='/#skiing'
+          link2=' South Patagonia'
+          href2='/skiing/south-patagonia'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
