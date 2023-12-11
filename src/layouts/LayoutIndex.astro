@@ -1,4 +1,5 @@
 ---
+
 import '../styles/index.css';
 
 interface Props {
@@ -30,11 +31,33 @@ const makeTitle = title
 		<slot />
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+		<div class="fixed-bottom">
+			<a class="whatsapp fab fa-whatsapp" href="https://wa.me/542966464845/" target="_blank"></a>
+		</div>
+
 	</body>
 </html>
 
 <style is:global>
 	img {
 		content-visibility: auto;
+	}
+	.fixed-bottom {
+		left: unset;
+	}
+	.whatsapp {
+      font-size: 60px;
+			color: #3fba16;
+			text-decoration: none;
+			margin-right: 30px;
+			margin-bottom: 20px;
+  }
+	@media (max-width: 575.98px) {
+		.whatsapp {
+      font-size: 40px;
+			margin-right: 16px;
+			margin-bottom: 10px;
+  }
 	}
 </style>
