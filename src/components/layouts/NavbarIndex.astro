@@ -68,7 +68,7 @@ const logos = [
 ];
 ---
  
-  <nav class="navbar navbar-expand-lg fixed-top py-2">
+  <nav class="navbar navbar-expand-xl fixed-top py-2">
     <div class="container-sm">
       <a class="navbar-brand" href="/">
         <img class="img-fluid" alt="patagoniascent" src="../img/index/logo.png"></img>
@@ -79,14 +79,17 @@ const logos = [
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav align-items-lg-center">
           {
-            links.map((link) => (
+            links.map((link) => ( 
             <li class="nav-item">
-              <a href={link.href} class="fs-6 nav-link">{link.name}</a>
+              <a href={link.href} class="nav-link fs-6 d-lg-none">
+                <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">{link.name}</span>
+              </a>
+              <a href={link.href} class="nav-link fs-6 d-none d-lg-block">{link.name}</a>
             </li>
           )
           )}
 
-        {redes.map((red) => (
+          {redes.map((red) => (
               <li class="nav-item">
                 <a href={red.href} class="nav-link contacto fs-6">
                   {red.nombre}
@@ -98,8 +101,8 @@ const logos = [
                   )}
                 </ul>
               </li>
-          )
-        )}
+            )
+          )}
 
           {logos.map((logo) => (
               <li class="nav-item">

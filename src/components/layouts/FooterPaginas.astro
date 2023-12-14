@@ -3,32 +3,26 @@ const links = [
   {
     name: 'about us',
     href: '/#aboutus',
-    isExternal: 'false',
   },
   {
     name: 'mountaineering',
     href: '/#mountaineering',
-    isExternal: '',
   },
   {
     name: 'climbing',
     href: '/#climbing',
-    isExternal: 'false',
   },
   {
     name: 'skiing',
     href: '/#skiing',
-    isExternal: 'false',
   },
   {
     name: 'courses',
     href: '/#courses',
-    isExternal: 'false',
   },
   {
     name: 'contact us',
     href: '/contactus',
-    isExternal: 'false',
   },
 ]
 const redes = [
@@ -103,7 +97,7 @@ const logos = [
       <ul class="nav">
         {
           redes.map((red)=> (
-            <li class="nav-item mb-2"><a class={red.class} href={red.href} aria-label={red.alt}></a></li>
+            <li class="nav-item mb-2"><a target="_blanck" class={red.class} href={red.href} aria-label={red.alt}></a></li>
           )
         )}
       </ul>
