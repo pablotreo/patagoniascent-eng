@@ -90,20 +90,20 @@ const logos = [
           )
           )}
 
-        {redes.map((red) => (
+          {redes.map((red) => (
               <li class="nav-item">
                 <a href={red.href} class="nav-link contacto px-2 fs-6 fw-light" aria-label={red.nombre}>
                   {red.nombre}
                 </a>
-                <ul class="ul-redes nav">
+                <ul class="ul-redes">
                   {red.links.map((link) => (
-                    <li class="nav-item"><a href={link.href} target="_blanck" class={link.class} aria-label={link.alt}/></li>
+                    <a href={link.href} target="_blanck" class={link.class} aria-label={link.alt}/>
                     )
                   )}
                 </ul>
               </li>
-          )
-        )}
+            )
+          )}
 
           {logos.map((logo) => (
               <li class="nav-item">
@@ -121,10 +121,20 @@ const logos = [
 
   <style>
     .navbar {
-      /* text-align: right; */
+      text-align: right;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
     }
     .contacto {
       position: relative;
+    }
+    .nav-link {
+      font-weight: 400;
+      display: inline-flex;
     }
     .redes {
       font-size: 20px;
@@ -136,8 +146,12 @@ const logos = [
       position: absolute; 
       padding-left: 2px;
     }
-    .ul-redes > a {
+    /* .ul-redes > a {
       display: inline-block;
+    } */
+    @media (max-width: 575.98px) {
+      .ul-redes {
+        position: relative; 
+      }
     }
-    
   </style>
