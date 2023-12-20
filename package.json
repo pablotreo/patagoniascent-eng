@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/partytown": "^2.0.2",
     "astro": "^3.2.4",
     "astro-seo": "^0.8.0"
   }

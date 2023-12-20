@@ -7,8 +7,6 @@ export default defineConfig({
     site: 'https://www.patagoniascent.com/',
 
     integrations: [
-      partytown({
-      })
     ]
 });
 
