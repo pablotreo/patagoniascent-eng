@@ -12,7 +12,7 @@ const { miArray } = Astro.props;
       {
         miArray.map ((foto, index) => (
           <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
-              <img src={foto.srcFotos} class="" alt={foto.alt} width="100%" height="auto" />
+              <img src={foto.srcFotos} class="d-block w-100" alt={foto.alt} width="100%" height="auto" />
           </div>
         )
       )}
