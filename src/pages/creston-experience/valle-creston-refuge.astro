@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Valle del Crestón Refuge',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-4.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-4.jpg',
+  },
+  {
+    alt: 'Valle del Crestón Refuge',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-5.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-5.jpg',
+  },
+  {
+    alt: 'Valle del Crestón Refuge',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-3.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-3.jpg',
+  },
+  {
+    alt: 'Valle del Crestón Refuge',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-8.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-8.jpg',
+  },
+  {
+    alt: 'Valle del Crestón Refuge',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-7.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-7.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Crestón Experience | Valle del Crestón Refuge" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Valle del Crestón Refuge' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title=' Sleeping Among the Mountains' 
+          description='Discover this cozy refuge located in the Crestón Mountain valley, south of Lago del Desierto. To access it, you must follow a hiking trail of approximately 2 km in length with an elevation gain of 200 meters from the parking area on RP 41. The refuge consists of two main domes. The first one houses the living room and kitchen, where breakfast and dinner are served. The second dome features a dormitory with a capacity for 10 beds. A third structure houses bathrooms and showers, equipped with hot and cold water. With the aim of minimizing environmental impact and promoting sustainability, every aspect related to the environment was evaluated during both the construction and operation of the refuge. All materials used were manually transported to avoid creating new trails. Additionally, a system was implemented to treat wastewater on-site, and solar power is available 24 hours a day.'
+          difficulty=' '
+          duration=' '
+          pax=' '
+          time=' '
+          hrefitinerary='../itineraries/creston/RefugioValleCreston.pdf'
+
+          link1=' Crestón Experience'
+          href1='/#creston-experience'
+          link2=' Crestón Refuge'
+          href2='/creston-experience/valle-creston-refuge'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

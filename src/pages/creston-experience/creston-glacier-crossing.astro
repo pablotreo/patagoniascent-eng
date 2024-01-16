@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Glacier Crossing',
+    srcFotos: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-4.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-thumb-4.jpg',
+  },
+  {
+    alt: 'Glacier Crossing',
+    srcFotos: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-3.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-thumb-3.jpg',
+  },
+  {
+    alt: 'Glacier Crossing',
+    srcFotos: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-5.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-thumb-5.jpg',
+  },
+  {
+    alt: 'Glacier Crossing',
+    srcFotos: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-1.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-thumb-1.jpg',
+  },
+  {
+    alt: 'Glacier Crossing',
+    srcFotos: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-2.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-crossing/glacier-crossing-thumb-2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Crestón Experience | Glacier Crossing" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Crestón Glacier Crossing' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='An Adventure Guaranteed' 
+          description='Discover an unforgettable experience in El Chaltén with our ascent to the front of the Crestón Glacier, trekking, and thrilling glacier crossing. From here, you can admire a stunning view of the Vuelta River Valley and the north face of Fitz Roy Mountain. The Crestón Valley is located in the Lago Del Desierto area, approximately 37 km north of El Chaltén via RP 41. This valley offers a variety of alternatives for all skill levels and at different times of the season. You can explore tall lenga forests, glaciers, and the imposing summit of Crestón Mountain. This setting provides us with trekking options both within the lush forest and in high mountain terrain.'
+          difficulty=' Medium / High'
+          duration=' 1 day'
+          pax=' 1 or 4 people'
+          time=' October to April'
+          hrefitinerary='../itineraries/creston/CrestonGlacierCrossing.pdf'
+
+          link1=' Crestón Experience'
+          href1='/#creston-experience'
+          link2=' Glacier Crossing'
+          href2='/creston-experience/creston-glacier-crossing'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
