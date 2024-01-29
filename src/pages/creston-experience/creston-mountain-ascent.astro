@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Creston Ascent',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-4.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-4.jpg',
+  },
+  {
+    alt: 'Creston Ascent',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-3.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-3.jpg',
+  },
+  {
+    alt: 'Creston Ascent',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-5.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-5.jpg',
+  },
+  {
+    alt: 'Creston Ascent',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-1.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-1.jpg',
+  },
+  {
+    alt: 'Creston Ascent',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-2.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Crestón Experience | Creston Ascent" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Ascent to Crestón Peak' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title=' Conquer Your First Summit in El Chaltén' 
+          description='Cerro Crestón, 2050 meters above sea level, is located in the area of Lago Del Desierto, approximately 37 km north of El Chaltén with access through RP 41. Reaching its scenic summit, you will enjoy breathtaking and unique views of Cerro Vespignani, the Fitz Roy Range, and the Southern Patagonian Ice Field. The ascent to the summit of Cerro Crestón will take you through a variety of mountain terrains. After spending the night at Refugio Valle del Crestón, you will start your journey along a trail winding through a lenga forest, crossing streams and small waterfalls. From there, you will begin ascending through moraines and slabs of rock eroded by the glacier, culminating at the base of Crestón Glacier. At this point, navigate through a snow and ice-covered terrain, weaving through the glaciers crevasses, allowing you to reach the southern col of the mountain. From there, head towards the summit, ascending along an aesthetic ridge with a 50-degree incline, overcoming some sections of mixed terrain.'
+          difficulty=' Moderate / High'
+          duration=' 2 days'
+          pax=' 1 or 2 people'
+          time=' October to May'
+          hrefitinerary='../itineraries/creston/CrestonMountainAscent.pdf'
+
+          link1=' Crestón Experience'
+          href1='/#creston-experience'
+          link2=' Creston Ascent'
+          href2='/creston-experience/creston-mountain-ascent'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
