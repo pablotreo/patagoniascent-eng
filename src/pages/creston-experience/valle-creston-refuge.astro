@@ -41,22 +41,27 @@ const fotos = [
 
     <div class="container text-center px-lg-5">
       <div class="row">
-
-        <Content
-          title=' Sleeping Among the Mountains' 
-          description='Discover this cozy refuge located in the Crestón Mountain valley, south of Lago del Desierto. To access it, you must follow a hiking trail of approximately 2 km in length with an elevation gain of 200 meters from the parking area on RP 41. The refuge consists of two main domes. The first one houses the living room and kitchen, where breakfast and dinner are served. The second dome features a dormitory with a capacity for 10 beds. A third structure houses bathrooms and showers, equipped with hot and cold water. With the aim of minimizing environmental impact and promoting sustainability, every aspect related to the environment was evaluated during both the construction and operation of the refuge. All materials used were manually transported to avoid creating new trails. Additionally, a system was implemented to treat wastewater on-site, and solar power is available 24 hours a day.'
-          difficulty=' '
-          duration=' '
-          pax=' '
-          time=' '
-          hrefitinerary='../itineraries/creston/RefugioValleCreston.pdf'
-
-          link1=' Crestón Experience'
-          href1='/#creston-experience'
-          link2=' Crestón Refuge'
-          href2='/creston-experience/valle-creston-refuge'
-
-        />
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/#creston-experience">Crestón Experience</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/creston-experience/valle-creston-refuge">Crestón Refuge</a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">Sleeping Among the Mountains</h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p>Discover this cozy refuge located in the Crestón Mountain valley, south of Lago del Desierto. To access it, you must follow a hiking trail of approximately 2 km in length with an elevation gain of 200 meters from the parking area on RP 41. The refuge consists of two main domes. The first one houses the living room and kitchen, where breakfast and dinner are served. The second dome features a dormitory with a capacity for 10 beds. A third structure houses bathrooms and showers, equipped with hot and cold water. With the aim of minimizing environmental impact and promoting sustainability, every aspect related to the environment was evaluated during both the construction and operation of the refuge. All materials used were manually transported to avoid creating new trails. Additionally, a system was implemented to treat wastewater on-site, and solar power is available 24 hours a day.</p>
+            <p class="mb-1"><b>Facilities:</b> </p>
+            <p class="mb-1">- Dome Kitchen-dining room with firewood heating.</p>
+            <p class="mb-1">- Dome Bedroom with 10 beds, in bunk beds and two extras. It has wood heating and sleeping bag with liner is provided.</p>
+            <p class="mb-1">- A classic construction are the bathrooms, shower with hot water.</p>
+            <p class="mb-4">- Solar energy at 220 watts.</p>
+              
+            <a href="../itineraries/creston/RefugioValleCreston.pdf" target="_blank" class="fs-5 fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button" aria-label="Download Itinerary">DOWNLOAD ITINERARY</a>
+            <i class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
+          </div>    
+        </div>
 
         <Slider miArray={fotos} />
 
@@ -66,7 +71,10 @@ const fotos = [
 </LayoutPaginas>
 
 <style>
-  
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
 </style>
 
 
