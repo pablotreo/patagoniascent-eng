@@ -59,15 +59,26 @@ const links = [
   // },
 ]
 const logos = [
+{
+    img: '',
+    href: 'https://esp.patagoniascent.com/',
+    alt: '',
+    class: 'fa-solid fa-globe translate',
+    target: '_self',
+  },
   {
     img: '../img/index/aagm.png',
     href: 'https://www.aagm.com.ar/',
     alt: 'AAGM',
+    class: 'd-none d-lg-block',
+    target: '_blanck',
   },
   {
     img: '../img/index/uiagm.png',
     href: 'https://ifmga.info/',
     alt: 'UIAGM',
+    class: 'd-none d-lg-block',
+    target: '_blanck',
   }
 ];
 ---
@@ -110,8 +121,8 @@ const logos = [
 
           {logos.map((logo) => (
               <li class="nav-item">
-                <a href={logo.href} target="_blanck" class="nav-link">
-                  <img src={logo.img} alt={logo.alt} class="d-none d-lg-block" />
+                <a href={logo.href} target={logo.target} class="nav-link" title="Spanish">
+                  <img src={logo.img} alt={logo.alt} class={logo.class} />
                 </a>
               </li>
             )
@@ -143,13 +154,17 @@ const logos = [
       position: relative;
     }
     .redes {
-      font-size: 18px;
-      padding: 5px!important;
+      font-size: 20px;
+      padding: 3px!important;
       padding-top: 0px!important;
     }
     .ul-redes {
       position: absolute; 
       padding-left: 2px;
+    }
+    .translate {
+      font-size: 18px;
+      line-height: unset;
     }
 
     @media (max-width: 575.98px) {
