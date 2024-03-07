@@ -5,5 +5,11 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.patagoniascent.com/',
-  integrations: [sitemap()]
+  integrations: [sitemap()],
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
 });
+
+
