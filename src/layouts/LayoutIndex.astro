@@ -1,6 +1,7 @@
 ---
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import { Analytics } from '@vercel/analytics/react';
 import '../styles/index.css';
 
 interface Props {
@@ -85,6 +86,7 @@ const socialImageURL = new URL("/img/patagoniascent.jpg", Astro.url);
 			</a>
 		</div>
 		<SpeedInsights />
+		<Analytics />
 	</body>
 </html>
 

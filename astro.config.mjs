@@ -6,10 +6,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: 'https://www.patagoniascent.com/',
   integrations: [sitemap()],
-  output: 'server',
-  adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
 });
 
 
