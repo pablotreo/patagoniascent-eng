@@ -6,13 +6,13 @@
   <div class="container">
     <div class="p-1">
       <div id="creston-shade-section">
-        <h1 class="fs-1 lh-1">Creston <br>Experience</h1>
+        <h1 class="display-5 lh-1">Creston <br>Experience</h1>
         <ul class="menu-section ps-0 fs-4">
-					<li class="list-group-item"><a href="/creston-experience/valle-creston-refuge" title="Valle del Crestón Refuge">Valle del Crestón Refuge</a></li>
-					<li class="list-group-item"><a href="/creston-experience/two-glaciers-viewpoint-trek" title="Two Glaciers Viewpoint Trek">Two Glaciers Viewpoint Trek</a></li>
-					<li class="list-group-item"><a href="/creston-experience/creston-glacier-trek" title="Crestón Glacier Trek">Crestón Glacier Trek</a></li>
-					<li class="list-group-item"><a href="/creston-experience/creston-glacier-crossing" title="Crestón Glacier Crossing">Crestón Glacier Crossing</a></li>
-					<li class="list-group-item"><a href="/creston-experience/creston-mountain-ascent" title="Crestón Glacier Crossing">Crestón Mountain Ascent</a></li>
+					<li class="list-group-item"><a href="/creston-experience/valle-creston-refuge" title="Valle del Crestón Refuge"><i class="fa-solid fa-chevron-right"></i>Valle del Crestón Refuge</a></li>
+					<li class="list-group-item"><a href="/creston-experience/two-glaciers-viewpoint-trek" title="Two Glaciers Viewpoint Trek"><i class="fa-solid fa-chevron-right"></i>Two Glaciers Viewpoint Trek</a></li>
+					<li class="list-group-item"><a href="/creston-experience/creston-glacier-trek" title="Crestón Glacier Trek"><i class="fa-solid fa-chevron-right"></i>Crestón Glacier Trek</a></li>
+					<li class="list-group-item"><a href="/creston-experience/creston-glacier-crossing" title="Crestón Glacier Crossing"><i class="fa-solid fa-chevron-right"></i>Crestón Glacier Crossing</a></li>
+					<li class="list-group-item"><a href="/creston-experience/creston-mountain-ascent" title="Crestón Glacier Crossing"><i class="fa-solid fa-chevron-right"></i>Crestón Mountain Ascent</a></li>
         </ul>
       </div>
     </div>
@@ -23,7 +23,9 @@
 
 .creston {
 	height: 100vh;
-  min-height: 350px;
+  height: 100dvh;
+  scroll-snap-align: center;
+  /* min-height: 350px; */
 	background-image: url("../img/index/secciones/creston.jpg");
  	background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -33,13 +35,14 @@
 #creston-shade-section {
 	position: relative;
   background-color: rgba(0,0,0,0.5);
-  padding: 40px 50px 40px 50px;
+  padding: 40px 40px 40px 40px;
   width: fit-content;
   width: -moz-fit-content; 
   margin-top: 99px; 
 	text-align: left;
-	/* clip-path: polygon(0px 0px, 327px 0px, 330px 90px, 283px 244px, 333px 445px, -2px 447px); */
-  clip-path: polygon(0px 0px, 409px 0px, 409px 29px, 376px 105px, 408px 174px, 414px 254px, 410px 372px, 409px 431px, 0px 431px);
+  /* clip-path: polygon(0px 0px, 409px 0px, 409px 29px, 376px 105px, 408px 174px, 390px 320px, 410px 372px, 409px 431px, 0px 431px); */
+	/* clip-path: polygon(0px 0px, 394px 0px, 426px 62px, 396px 171px, 426px 236px, 426px 401px, 0px 401px); */
+	clip-path: polygon(0px 0px, 406px 0px, 370px 74px, 404px 199px, 383px 272px, 417px 386px, 0px 385px);
 }
 
 .menu-section a {
@@ -50,33 +53,17 @@
 }
 .menu-section a:hover {
 	/*background-color: rgb(0,0,0,.6);*/
-	font-weight: bold;
 	color: rgba(255,255,255);
   text-decoration: underline;
+	text-underline-offset: 4px;
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {
-  .shape-shade-section {
-		position: relative;
-	  margin-top: 93px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 40px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
-	}
+ 
   #creston-shade-section {
-		position: relative;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 10px 20px 10px;
-	  text-align: left;
-		/* margin-bottom: 50px; */
-		/* clip-path: unset; */
+	  padding: 30px 20px 30px 20px;
 	}
 }
 </style>

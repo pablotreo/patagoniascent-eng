@@ -42,3 +42,14 @@
 		color: #ffffff;
 		font-size: 14px;
 	}
+
+	.fa-solid {
+		font-size: 22px;
+		margin-right: 4px;
+	}
+
+	@media (max-width: 575.98px) {
+		.fa-solid {
+			font-size: 20px;
+		}
+	}

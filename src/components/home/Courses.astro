@@ -6,11 +6,11 @@
   <div class="container">
     <div class="p-1">
       <div id="course-shade-section">
-        <h3 class="fs-1 lh-1">Courses in<br> Patagonia</h3>
+        <h3 class="display-5 lh-1">Courses in<br> Patagonia</h3>
         <ul class="menu-section list-grup ps-0 fs-4">
-          <li class="list-group-item"><a href="courses/rock-climbing-course" title="Rock Climbing">Rock Climbing</a></li>
-          <li class="list-group-item"><a href="courses/ice-climbing-course" title="Ice Climbing">Ice Climbing</a></li>
-					<li class="list-group-item"><a href="courses/ski-mountaineering-course" title="Ski Mountaineering">Mountain Ski</a></li>
+          <li class="list-group-item"><a href="courses/rock-climbing-course" title="Rock Climbing"><i class="fa-solid fa-chevron-right"></i>Rock Climbing</a></li>
+          <li class="list-group-item"><a href="courses/ice-climbing-course" title="Ice Climbing"><i class="fa-solid fa-chevron-right"></i>Ice Climbing</a></li>
+					<li class="list-group-item"><a href="courses/ski-mountaineering-course" title="Ski Mountaineering"><i class="fa-solid fa-chevron-right"></i>Mountain Ski</a></li>
         </ul>  
         <p class="fs-6 mt-3 text-links">
           We are also committed to carrying out mountain training. 
@@ -26,24 +26,23 @@
 
 .courses {
 	height: 100vh;
-  min-height: 350px;
+  height: 100dvh;
+  scroll-snap-align: center;
+  /* min-height: 350px; */
 	background-image: url("../img/index/secciones/courses.jpg");
  	background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
  	background-size: cover; /* Resize the background image to cover the entire container */
 }
-
 #course-shade-section {
 	position: relative;
   background-color: rgba(0,0,0,0.5);
-  padding: 40px 50px 40px 50px;
+  padding: 40px 40px 40px 40px;
   width: fit-content;
-  width: -moz-fit-content; 
   margin-top: 99px; 
 	text-align: left;
-	clip-path: polygon(0px 0px, 350px 0px, 321px 178px, 350px 495px, 351px 551px, 0px 549px);
+  clip-path: polygon(0px 0px, 322px 0px, 322px 107px, 283px 224px, 322px 318px, 322px 465px, 324px 546px, 0px 543px);
 }
-
 .menu-section a {
 	font-family: MuseoSans300, sans-serif;
   /* font-size: 26px; */
@@ -52,42 +51,22 @@
 }
 .menu-section a:hover {
 	/*background-color: rgb(0,0,0,.6);*/
-	font-weight: bold;
 	color: rgba(255,255,255);
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .text-links {
 	color: #FFFFFF;
 	font-family: MuseoSans100;
-  width: 250px;
+  width: 220px;
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {
-  .shape-shade-section {
-		position: relative;
-	  margin-top: 83px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 40px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
-	}
+ 
   #course-shade-section {
-		position: relative;
-		margin-top: 99px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: 100%;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 20px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
+	  padding: 30px 20px 10px 20px;
 	}
 }
 </style>

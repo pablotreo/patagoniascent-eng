@@ -6,18 +6,18 @@
   <div class="container">
     <div class="p-1">
       <div id="mountaineering-shade-section">
-        <h1 class="fs-1 lh-1">Mountaineering<br> in Patagonia</h3>
+        <h1 class="display-5 lh-1">Mountaineering<br> in Patagonia</h3>
         <ul class="menu-section list-grup ps-0 fs-4">
-          <li class="list-group-item"><a href="/mountaineering/ice-field" aria-label="Expedition Patagonian Ice Field" title="Expedition Patagonian Ice Field">Patagonian Ice Field</a></li>
-          <li class="list-group-item"><a href="/mountaineering/cerro-solo" aria-label="Cerro Solo" title="Cerro Solo">Cerro Solo</a></li>
-          <li class="list-group-item diseable"><a href="/mountaineering/cerro-electrico" aria-label="Cerro Electrico" title="Cerro Electrico">Cerro Electrico</a></li>
-          <li class="list-group-item"><a href="/mountaineering/cerro-gorra-blanca" aria-label="Cerro Gorra Blanca" title="Cerro Gorra Blanca">Cerro Gorra Blanca</a></li>
-          <li class="list-group-item"><a href="/mountaineering/cerro-madsen" aria-label="Cerro Madsen" title="Cerro Madsen">Cerro Madsen</a></li>
-          <li class="list-group-item"><a href="/mountaineering/cerro-mojon-rojo" aria-label="Cerro Mojon Rojo" title="Cerro Mojon Rojo">Cerro Mojon Rojo</a></li>
-          <li class="list-group-item"><a href="/mountaineering/cerro-vespignani" aria-label="Cerro Vespignani" title="Cerro Vespignani">Cerro Vespignani</a></li>
-          <li class="list-group-item"><a href="/mountaineering/tres-valles-traverse" aria-label="Tres Valles Traverse" title="Tres Valles Traverse">Tres Valles Traverse</a></li>
-          <li class="list-group-item"><a href="/mountaineering/paso-superior-traverse" aria-label="Paso Superior - Paso Guillaumet Traverse" title="Paso Superior - Paso Guillaumet Traverse">Paso Superior Traverse</a></li>
-          <li class="list-group-item"><a href="/mountaineering/fitz-roy-circuit" title="Fitz Roy - Cerro Torre Circuit" aria-label="Fitz Roy - Cerro Torre Circuit">Fitz Roy Circuit</a></li>
+          <li class="list-group-item"><a href="/mountaineering/ice-field" aria-label="Expedition Patagonian Ice Field" title="Expedition Patagonian Ice Field"><i class="fa-solid fa-chevron-right"></i>Patagonian Ice Field</a></li>
+          <li class="list-group-item"><a href="/mountaineering/cerro-solo" aria-label="Cerro Solo" title="Cerro Solo"><i class="fa-solid fa-chevron-right"></i>Cerro Solo</a></li>
+          <li class="list-group-item diseable"><a href="/mountaineering/cerro-electrico" aria-label="Cerro Electrico" title="Cerro Electrico"><i class="fa-solid fa-chevron-right"></i>Cerro Electrico</a></li>
+          <li class="list-group-item"><a href="/mountaineering/cerro-gorra-blanca" aria-label="Cerro Gorra Blanca" title="Cerro Gorra Blanca"><i class="fa-solid fa-chevron-right"></i>Cerro Gorra Blanca</a></li>
+          <li class="list-group-item"><a href="/mountaineering/cerro-madsen" aria-label="Cerro Madsen" title="Cerro Madsen"><i class="fa-solid fa-chevron-right"></i>Cerro Madsen</a></li>
+          <li class="list-group-item"><a href="/mountaineering/cerro-mojon-rojo" aria-label="Cerro Mojon Rojo" title="Cerro Mojon Rojo"><i class="fa-solid fa-chevron-right"></i>Cerro Mojon Rojo</a></li>
+          <li class="list-group-item"><a href="/mountaineering/cerro-vespignani" aria-label="Cerro Vespignani" title="Cerro Vespignani"><i class="fa-solid fa-chevron-right"></i>Cerro Vespignani</a></li>
+          <li class="list-group-item"><a href="/mountaineering/tres-valles-traverse" aria-label="Tres Valles Traverse" title="Tres Valles Traverse"><i class="fa-solid fa-chevron-right"></i>Tres Valles Traverse</a></li>
+          <li class="list-group-item"><a href="/mountaineering/paso-superior-traverse" aria-label="Paso Superior - Paso Guillaumet Traverse" title="Paso Superior - Paso Guillaumet Traverse"><i class="fa-solid fa-chevron-right"></i>Paso Superior Traverse</a></li>
+          <li class="list-group-item"><a href="/mountaineering/fitz-roy-circuit" title="Fitz Roy - Cerro Torre Circuit" aria-label="Fitz Roy - Cerro Torre Circuit"><i class="fa-solid fa-chevron-right"></i>Fitz Roy Circuit</a></li>
         </ul>
       </div>
     </div>
@@ -28,25 +28,24 @@
 
   .mountaineering {
     height: 100vh;
-    min-height: 350px;
+    height: 100dvh;
+    scroll-snap-align: center;
+    /* min-height: 350px; */
     background-image: url("../img/index/secciones/mountaineering.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
   }
-
   #mountaineering-shade-section {
     position: relative;
     background-color: rgba(0,0,0,0.5);
-    padding: 40px 50px 40px 50px;
+    padding: 40px 40px 40px 40px;
     width: fit-content;
-    width: -moz-fit-content; 
     margin-top: 99px; 
     text-align: left;
-    /* clip-path: polygon(0px 0px, 407px 0px, 408px 74px, 376px 198px, 407px 535px, 407px 574px, 0px 574px); */
-    clip-path: polygon(0px 0px, 407px 0px, 408px 74px, 376px 198px, 410px 509px, 408px 553px, 0px 555px);
+    /* clip-path: polygon(0px 0px, 407px 0px, 408px 74px, 376px 198px, 410px 509px, 408px 553px, 0px 555px); */
+    clip-path: polygon(0px 0px, 439px -1px, 439px 100px, 376px 198px, 410px 509px, 408px 553px, 0px 555px);
   }
-
   .menu-section a {
     font-family: MuseoSans300, sans-serif;
     /* font-size: 26px; */
@@ -55,39 +54,16 @@
   }
   .menu-section a:hover {
     /*background-color: rgb(0,0,0,.6);*/
-    font-weight: bold;
     color: rgba(255,255,255);
     text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   /*// Extra small devices (portrait phones, less than 576px)*/
   @media (max-width: 575.98px) {
-    .mountaineering {
-      min-height: 600px;
-    }
-    .shape-shade-section {
-      position: relative;
-      margin-top: 83px; 
-      height: fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px 40px 20px 15px;
-      text-align: left;
-      margin-bottom: 50px;
-      clip-path: unset;
-    }
+   
     #mountaineering-shade-section {
-      position: relative;
-      margin-top: 99px; 
-      height: fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px 40px 20px 15px;
-      text-align: left;
-      margin-bottom: 50px;
-      clip-path: unset;
+      padding: 30px 20px 30px 20px;
 	  }
 }
 </style>

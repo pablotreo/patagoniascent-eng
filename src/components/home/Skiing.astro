@@ -6,12 +6,12 @@
   <div class="container">
     <div class="p-1">
       <div id="skiing-shade-section">
-        <h1 class="fs-1 lh-1">Skiing in<br> Patagonia</h1>
+        <h1 class="display-5 lh-1">Skiing in<br> Patagonia</h1>
         <ul class="menu-section list-grup ps-0 fs-4">
-          <li class="list-group-item"><a href="skiing/north-patagonia" title="North Patagonia">North Patagonia</a></li>
-					<li class="list-group-item"><a href="skiing/south-patagonia" title="South Patagonia">South Patagonia</a></li>
-					<li class="list-group-item"><a href="skiing/volcanoes-in-patagonia" title="Volcanoes in Patagonia">Volcanoes in Patagonia</a></li>
-					<li class="list-group-item"><a href="skiing/ski-tour-in-patagonia" title="Ski Tour in Patagonia">Ski Tour in Patagonia</a></li>
+          <li class="list-group-item"><a href="skiing/north-patagonia" title="North Patagonia"><i class="fa-solid fa-chevron-right"></i>North Patagonia</a></li>
+					<li class="list-group-item"><a href="skiing/south-patagonia" title="South Patagonia"><i class="fa-solid fa-chevron-right"></i>South Patagonia</a></li>
+					<li class="list-group-item"><a href="skiing/volcanoes-in-patagonia" title="Volcanoes in Patagonia"><i class="fa-solid fa-chevron-right"></i>Volcanoes in Patagonia</a></li>
+					<li class="list-group-item"><a href="skiing/ski-tour-in-patagonia" title="Ski Tour in Patagonia"><i class="fa-solid fa-chevron-right"></i>Ski Tour in Patagonia</a></li>
         </ul>
       </div>
     </div>
@@ -22,7 +22,9 @@
 
   .skiing {
     height: 100vh;
-    min-height: 350px;
+    height: 100dvh;
+    scroll-snap-align: center;
+    /* min-height: 350px; */
     background-image: url("../img/index/secciones/ski.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -32,14 +34,12 @@
   #skiing-shade-section{
     position: relative;
     background-color: rgba(0,0,0,0.5);
-    padding: 40px 50px 40px 50px;
+    padding: 40px 40px 40px 40px;
     width: fit-content;
-    width: -moz-fit-content; 
     margin-top: 99px; 
     text-align: left;
     clip-path: polygon(0px 0px, 318px 0px, 378px 228px, 361px 340px, 0px 340px);
   }
-
   .menu-section a {
     font-family: MuseoSans300, sans-serif;
     /* font-size: 26px; */
@@ -48,37 +48,17 @@
   }
   .menu-section a:hover {
     /*background-color: rgb(0,0,0,.6);*/
-    font-weight: bold;
     color: rgba(255,255,255);
     text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   /*// Extra small devices (portrait phones, less than 576px)*/
 
   @media (max-width: 575.98px) {
-    .shape-shade-section {
-      position: relative;
-      margin-top: 83px; 
-      height: fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px 40px 20px 15px;
-      text-align: left;
-      margin-bottom: 50px;
-      clip-path: unset;
-    }
-    #ski-shade-section {
-      position: relative;
-      margin-top: 102px; 
-      height: fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px 20px 20px 15px;
-      text-align: left;
-      margin-bottom: 50px;
-      clip-path: unset;
+    
+    #skiing-shade-section {
+      padding: 30px 20px 30px 20px;
     }
   }
 </style>

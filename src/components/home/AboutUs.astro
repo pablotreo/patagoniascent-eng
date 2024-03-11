@@ -6,7 +6,7 @@
   <div class="container">
     
       <div id="about-shade-section" class="container-lg shape-shade-section">
-        <h3 class="fs-1">About Us</h3>
+        <h3 class="display-5 lh-1">About Us</h3>
         <div class="row">
 
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -16,7 +16,7 @@
                 <div class="card">
                   <h4 class="fs-2">Juan Raselli</h4>
                   <h5 class="fs-6">IFMGA MOUNTAIN GUIDE</h5>
-                  <a class="fs-6" href="aboutus/juan-raselli">MORE INFO HERE</a> 
+                  <a class="fs-6 link-offset-2" href="aboutus/juan-raselli">MORE INFO HERE</a> 
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@
                 <div class="card">
                   <h4 class="fs-2">Roberto Treu</h4>
                   <h5 class="fs-6">IFMGA MOUNTAIN GUIDE</h5>
-                  <a class="fs-6" href="aboutus/roberto-treu">MORE INFO HERE</a> 
+                  <a class="fs-6 link-offset-2" href="aboutus/roberto-treu">MORE INFO HERE</a> 
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="card">
                   <h4 class="fs-2">Tomás Aguiló</h4>
                   <h5 class="fs-6">IFMGA MOUNTAIN GUIDE</h5>
-                  <a class="fs-6" href="aboutus/tomas-aguilo">MORE INFO HERE</a>
+                  <a class="fs-6 link-offset-2" href="aboutus/tomas-aguilo">MORE INFO HERE</a>
                 </div>
               </div>
             </div>
@@ -62,9 +62,10 @@
 
 <style>
 
-.about-us{
+.about-us {
 	height: 100vh;
-  min-height: 450px;
+  height: 100dvh;
+  scroll-snap-align: center;
 	background-image: url("../img/index/secciones/aboutus.jpg");
  	background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -74,22 +75,10 @@
 .shape-shade-section {
 	position: relative;
   background-color: rgba(0,0,0,0.5);
-  padding: 40px 50px 40px 50px;
+  padding: 40px 40px 40px 40px;
   width: fit-content;
-  width: -moz-fit-content; 
   margin-top: 102px; 
 }
-/* #about-shade-section{
-	position: relative;
-    background-color: rgba(0,0,0,0.5);
-    padding: 40px 50px 40px 50px;
-    width: fit-content;
-    width: -moz-fit-content; 
-    margin-top: 97px; 
-	text-align: left;
-	clip-path: polygon(0px 0px, 970px 0px, 970px 494px, 921px 487px, 859px 443px, 642px 495px, 477px 461px, 213px 490px, 110px 444px, 22px 494px, 0px 494px);
-} */
-
 .card {
 	background-color: transparent;
 	border-radius: 0px;
@@ -117,33 +106,14 @@
 
 
 /*// Extra small devices (portrait phones, less than 576px)*/
+
 @media (max-width: 575.98px) {
   .about-us{
     min-height: 900px;
   }
-	.shape-shade-section {
-		position: relative;
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 40px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
-	}
 	#about-shade-section{
-		position: relative;
-	  margin-top: 102px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 20px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
-	}
+	  padding: 30px 20px 30px 20px;
+	} 
   .rounded-circle {
 	  width: 100px;
   }

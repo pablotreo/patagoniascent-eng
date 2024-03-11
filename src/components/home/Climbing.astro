@@ -6,15 +6,15 @@
   <div class="container">
     <div class="p-1">
       <div id="climbing-shade-section">
-        <h1 class="fs-1 lh-1">Climbing in<br>Patagonia</h1>
+        <h1 class="display-5 lh-1">Climbing in<br>Patagonia</h1>
         <ul class="menu-section ps-0 fs-4">
-          <li class="list-group-item"><a href="/climbing/sport-climbing" title="Sport Climbing">Sport Climbing</a></li>
-          <li class="list-group-item"><a href="/climbing/aguja-guillaumet" title="Aguja Guillaumet">Aguja Guillaumet</a></li>
-          <li class="list-group-item"><a href="/climbing/cerro-mocho" title="Cerro Mocho">Cerro Mocho</a></li>
-          <li class="list-group-item"><a href="/climbing/aguja-s" title="Aguja De la S">Aguja De la S</a></li>
-          <li class="list-group-item"><a href="/climbing/aguja-poincenot" title="Aguja Poincenot">Aguja Poincenot</a></li>
-          <li class="list-group-item"><a href="/climbing/cerro-fitz-roy" title="Cerro Fitz Roy">Cerro Fitz Roy</a></li>
-          <li class="list-group-item"><a href="/climbing/cerro-torre" title="Cerro Torre">Cerro Torre</a></li>
+          <li class="list-group-item"><a href="/climbing/sport-climbing" title="Sport Climbing"><i class="fa-solid fa-chevron-right"></i>Sport Climbing</a></li>
+          <li class="list-group-item"><a href="/climbing/aguja-guillaumet" title="Aguja Guillaumet"><i class="fa-solid fa-chevron-right"></i>Aguja Guillaumet</a></li>
+          <li class="list-group-item"><a href="/climbing/cerro-mocho" title="Cerro Mocho"><i class="fa-solid fa-chevron-right"></i>Cerro Mocho</a></li>
+          <li class="list-group-item"><a href="/climbing/aguja-s" title="Aguja De la S"><i class="fa-solid fa-chevron-right"></i>Aguja De la S</a></li>
+          <li class="list-group-item"><a href="/climbing/aguja-poincenot" title="Aguja Poincenot"><i class="fa-solid fa-chevron-right"></i>Aguja Poincenot</a></li>
+          <li class="list-group-item"><a href="/climbing/cerro-fitz-roy" title="Cerro Fitz Roy"><i class="fa-solid fa-chevron-right"></i>Cerro Fitz Roy</a></li>
+          <li class="list-group-item"><a href="/climbing/cerro-torre" title="Cerro Torre"><i class="fa-solid fa-chevron-right"></i>Cerro Torre</a></li>
         </ul>
       </div>
     </div>
@@ -25,7 +25,9 @@
 
 .climbing {
 	height: 100vh;
-  min-height: 350px;
+  height: 100dvh;
+  scroll-snap-align: center;
+  /* min-height: 350px; */
 	background-image: url("../img/index/secciones/climbing.jpg");
  	background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -35,12 +37,13 @@
 #climbing-shade-section {
 	position: relative;
   background-color: rgba(0,0,0,0.5);
-  padding: 40px 50px 40px 50px;
+  padding: 40px 40px 40px 40px;
   width: fit-content;
   width: -moz-fit-content; 
   margin-top: 99px; 
 	text-align: left;
-	clip-path: polygon(0px 0px, 327px 0px, 330px 90px, 283px 244px, 333px 445px, -2px 447px);
+	/* clip-path: polygon(0px 0px, 327px 0px, 330px 90px, 283px 244px, 333px 445px, -2px 447px); */
+	clip-path: polygon(0px 0px, 337px 0px, 349px 88px, 311px 244px, 333px 445px, -2px 447px);
 }
 
 .menu-section a {
@@ -51,37 +54,17 @@
 }
 .menu-section a:hover {
 	/*background-color: rgb(0,0,0,.6);*/
-	font-weight: bold;
 	color: rgba(255,255,255);
   text-decoration: underline;
+	text-underline-offset: 4px;
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 
-@media (max-width: 575.98px) {
-  .shape-shade-section {
-		position: relative;
-	  margin-top: 83px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 40px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
-	}
+ @media (max-width: 575.98px) {
+  
   #climb-shade-section {
-		position: relative;
-		margin-top: 83px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 40px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
+	  padding: 30px 20px 30px 20px;
 	}
-}
+} 
 </style>

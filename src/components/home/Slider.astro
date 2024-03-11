@@ -15,9 +15,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">Welcome to<br>Patagonia Ascent<br>2024&#x2013;2025</h3>
+            <h3 class="display-4 lh-1">Patagonia<br>2024&#x2013;2025</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">We make your<br> dreams come true</h2>
-            <a class="fs-6 link-slide" href="#mountaineering">SEE MOUNTAINEERING ITINERARIES</a>
+            <a class="fs-6 link-offset-2 link-slide" href="#mountaineering">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -27,9 +27,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">El Chalten<br>Patagonia</h3>
+            <h3 class="display-4 lh-1">El Chalten<br>Patagonia</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">Climbing in one of the <br>best places in the World</h2>
-            <a class="fs-6 link-slide" href="#climbing">SEE CLIMBING ITINERARIES</a>
+            <a class="fs-6 link-offset-2 link-slide" href="#climbing">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -39,9 +39,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">Ski season<br>2024&#x2013;2025</h3>
+            <h3 class="display-4 lh-1">Ski season<br>2024&#x2013;2025</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">Skiing in the heart<br>of Patagonia</h2>
-            <a class="fs-6 link-slide" href="#skiing">SEE SKI ITINERARIES</a>
+            <a class="fs-6 link-offset-2 link-slide" href="#skiing">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -51,9 +51,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">Enjoy Rock<br>Climbing</h3>
+            <h3 class="display-4 lh-1">Enjoy Rock<br>Climbing</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">Sport Climbing and<br>Multi Pitch El Chalten</h2>
-            <a class="fs-6 link-slide" href="climbing/sport-climbing">SEE SPORT CLIMBING</a>
+            <a class="fs-6 link-offset-2 link-slide" href="climbing/sport-climbing">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -71,6 +71,12 @@
 
 <style>
 
+.carousel {
+  height: 100vh;
+  height: 100dvh;
+  scroll-snap-align: center;
+}
+
 .carousel-caption {
   position: static;
   padding-top: 103px;
@@ -86,10 +92,6 @@
 }
 .link-slide {
 	color: #ffffff;
-  text-decoration: none;
-}
-.link-slide :hover{
-  text-decoration: underline;
 }
 #shape-shade-slider {
 	width: 580px;
@@ -103,14 +105,12 @@
 
 @media (max-width: 575.98px) {
 
-  .fs-1 {
+  /* .fs-1 {
     font-size: 40px!important;
-  }               
+  }                */
   #shape-shade-slider{
 		width: 100%;
-		width: -moz-fit-content;
-		padding: 30px 30px 60px 15px;
-		clip-path: unset;
+		padding: 30px 30px 60px 40px;
 	}
 }
   
