@@ -14,7 +14,7 @@
                 <img src="./img/index/aboutus/JuanRaselliThumb.jpg" class="rounded-circle img-fluid border border-3" alt="Juan Raselli" />
                 <div class="card">
                   <h4 class="fs-2">Juan Raselli</h4>
-                  <h5 class="fs-6">IFMGA MOUNTAIN GUIDE</h5>
+                  <h5 class="fs-6 d-none d-sm-none d-md-block">IFMGA MOUNTAIN GUIDE</h5>
                   <a class="fs-6 link-offset-2" href="aboutus/juan-raselli">MORE INFO HERE</a> 
                 </div>
               </div>
@@ -27,7 +27,7 @@
                 <img src="./img/index/aboutus/RobertoTreuThumb.jpg" class="rounded-circle img-fluid border border-3" alt="Roberto Treu" />
                 <div class="card">
                   <h4 class="fs-2">Roberto Treu</h4>
-                  <h5 class="fs-6">IFMGA MOUNTAIN GUIDE</h5>
+                  <h5 class="fs-6 d-none d-sm-none d-md-block">IFMGA MOUNTAIN GUIDE</h5>
                   <a class="fs-6 link-offset-2" href="aboutus/roberto-treu">MORE INFO HERE</a> 
                 </div>
               </div>
@@ -40,7 +40,7 @@
                 <img src="./img/index/aboutus/TomasAguiloThumb.jpg" class="rounded-circle img-fluid border border-3" alt="Tomas Aguilo" />
                 <div class="card">
                   <h4 class="fs-2">Tomás Aguiló</h4>
-                  <h5 class="fs-6">IFMGA MOUNTAIN GUIDE</h5>
+                  <h5 class="fs-6 d-none d-sm-none d-md-block">IFMGA MOUNTAIN GUIDE</h5>
                   <a class="fs-6 link-offset-2" href="aboutus/tomas-aguilo">MORE INFO HERE</a>
                 </div>
               </div>
@@ -66,7 +66,7 @@
 	height: 100vh;
   height: 100dvh;
   scroll-snap-align: center;
-  min-height: 1250px;
+  min-height: 900px;
 	background-image: url("../img/index/secciones/aboutus.jpg");
  	background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -110,12 +110,18 @@
 /*// Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {
-  .about-us {
+  /* .about-us {
     min-height: 900px;
-  } 
+  }  */
 	#about-shade-section {
 	  padding: 30px 20px 30px 20px;
 	} 
+  .rounded-circle {
+	  width: 100px;
+  }
+}
+
+@media (max-width: 768px) { 
   .rounded-circle {
 	  width: 100px;
   }
