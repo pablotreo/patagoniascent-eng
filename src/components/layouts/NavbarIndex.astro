@@ -54,16 +54,16 @@ const links = [
   },
   // {
   //   name: 'CONTACT US',
-  //   href: '/',
+  //   href: '/', fa-solid fa-globe 
   //   isExternal: 'false',
   // },
 ]
 const logos = [
 {
-    img: '',
+    img: '../img/index/globe-solid-512.png',
     href: 'https://esp.patagoniascent.com/',
     alt: '',
-    class: 'fa-solid fa-globe translate',
+    class: 'translate',
     target: '_self',
   },
   {
@@ -122,7 +122,7 @@ const logos = [
           {logos.map((logo) => (
               <li class="nav-item">
                 <a href={logo.href} target={logo.target} class="nav-link" title="Spanish">
-                  <img src={logo.img} alt={logo.alt} class={logo.class} />
+                  <img src={logo.img} alt={logo.alt} class={logo.class}/>
                 </a>
               </li>
             )
@@ -163,8 +163,7 @@ const logos = [
       padding-left: 2px;
     }
     .translate {
-      font-size: 18px;
-      line-height: unset;
+      max-width: 20px;
     }
 
     @media (max-width: 575.98px) {
