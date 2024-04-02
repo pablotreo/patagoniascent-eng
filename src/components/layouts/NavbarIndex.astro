@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+import Logosvg from "../../assets/logo.svg"
+
+
 const redes = [
   {
     nombre: 'CONTACT US',
@@ -86,7 +90,14 @@ const logos = [
   <nav class="navbar navbar-expand-xl fixed-top py-2">
     <div class="container-sm">
       <a class="navbar-brand" href="/">
-        <img class="img-fluid" alt="patagoniascent" src="../img/index/logo.png"></img>
+        <!-- <img class="img-fluid" alt="patagoniascent" src="/src/assets/logo.png"> -->
+        <Image 
+            src={Logosvg} 
+            alt="Logo" 
+            width={150}
+            format="svg"
+            quality={"max"}
+        />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="custom-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
