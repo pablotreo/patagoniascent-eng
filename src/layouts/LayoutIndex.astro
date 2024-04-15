@@ -28,7 +28,7 @@ const makeTitle = title
   twitterCard: "summary_large_image",
 };
 
-const canonicalURL = new URL(Astro.url.href);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL("/img/patagoniascent.jpg", Astro.url);
 
 ---
