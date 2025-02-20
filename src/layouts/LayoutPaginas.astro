@@ -1,76 +1,91 @@
 ---
-import  SpeedInsights  from "@vercel/speed-insights/astro"
+import SpeedInsights from '@vercel/speed-insights/astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
-import { SEO } from "astro-seo";
+import { SEO } from 'astro-seo';
 
 import { ViewTransitions } from 'astro:transitions';
 
 import '../styles/paginas.css';
 
 import FooterPaginas from '../components/layouts/FooterPaginas.astro';
-import NavbarPaginas from '../components/layouts/NavbarPaginas.astro'
+import NavbarPaginas from '../components/layouts/NavbarPaginas.astro';
 
 interface Props {
-	title: string;
+  title: string;
   description: string;
 }
 
 const { title, description } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Patagonia Ascent"
-  : "Patagonia Ascent";
+  ? title + ' | ' + 'Patagonia Ascent'
+  : 'Patagonia Ascent';
 
-  const makeDescription = description
-  ? description : "Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.";
-
+const makeDescription = description
+  ? description
+  : 'Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more." />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{makeTitle}</title>
-		<ViewTransitions />
-    <meta name="description" content={makeDescription} />
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='icon' type='image/svg+xml' href='/img/favicon.png' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{makeTitle}</title>
+    <ViewTransitions />
+    <meta name='description' content={makeDescription} />
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
+      integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    />
+    <link
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+      rel='stylesheet'
+      integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN'
+      crossorigin='anonymous'
+    />
 
-		<SEO
-			title="Patagonia Ascent"
-			description="Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more."
-			openGraph={{
-				basic: {
-					title: "Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.",
-					type: "A type.",
-					image: "https://www.patagoniascent.com/img/patagoniascent.jpg",
-				}
-			}}
-		/>
-		<link rel="sitemap" href="/sitemap-index.xml" />
-		<meta name="google-site-verification" content="g2VwV4bX5PqiKgUe3zZqh4yPwpTy0-RhcNUB2gaGGSg" />
-		<GoogleAnalytics />
-	</head>
-	<body>
-
+    <SEO
+      title='Patagonia Ascent'
+      description='Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.'
+      openGraph={{
+        basic: {
+          title:
+            'Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.',
+          type: 'A type.',
+          image: 'https://www.patagoniascent.com/img/patagoniascent.jpg',
+        },
+      }}
+    />
+    <link rel='sitemap' href='/sitemap-index.xml' />
+    <meta
+      name='google-site-verification'
+      content='g2VwV4bX5PqiKgUe3zZqh4yPwpTy0-RhcNUB2gaGGSg'
+    />
+    <GoogleAnalytics />
+  </head>
+  <body>
     <NavbarPaginas />
-		  <slot />
+    <slot />
     <FooterPaginas />
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-		integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js'
+      integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+'
+      crossorigin='anonymous'></script>
 
-		<SpeedInsights />
-	</body>
+    <SpeedInsights />
+  </body>
 </html>
 
 <style is:global>
-	img {
+  img {
     content-visibility: auto;
-	}
-  </style>
+  }
+</style>
