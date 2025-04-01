@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro';
+import Content from '../../components/paginas/Content.astro';
+import Titulo from '../../components/paginas/Titulo.astro';
+import Slider from '../../components/paginas/Slider.astro';
+
+const fotos = [
+  {
+    alt: 'Full Day Backcountry Skiing',
+    srcFotos: '/img/paginas/slider/creston/ski-creston/ski-creston6.jpg',
+    srcThum: '/img/paginas/slider/creston/ski-creston/ski-creston-thumb6.jpg',
+  },
+  {
+    alt: 'Full Day Backcountry Skiing',
+    srcFotos: '/img/paginas/slider/creston/ski-creston/ski-creston2.jpg',
+    srcThum: '/img/paginas/slider/creston/ski-creston/ski-creston-thumb2.jpg',
+  },
+  {
+    alt: 'Full Day Backcountry Skiing',
+    srcFotos: '/img/paginas/slider/creston/ski-creston/ski-creston7.jpg',
+    srcThum: '/img/paginas/slider/creston/ski-creston/ski-creston-thumb7.jpg',
+  },
+  {
+    alt: 'Full Day Backcountry Skiing',
+    srcFotos: '/img/paginas/slider/creston/ski-creston/ski-creston4.jpg',
+    srcThum: '/img/paginas/slider/creston/ski-creston/ski-creston-thumb4.jpg',
+  },
+  {
+    alt: 'Full Day Backcountry Skiing',
+    srcFotos: '/img/paginas/slider/creston/ski-creston/ski-creston5.jpg',
+    srcThum: '/img/paginas/slider/creston/ski-creston/ski-creston-thumb5.jpg',
+  },
+];
+---
+
+<LayoutPaginas
+  title='Crestón Experience | Full Day Backcountry Skiing'
+  description=''
+>
+  <div class='container text-start px-3 px-lg-5'>
+    <Titulo title=' Full Day Backcountry Skiing' />
+
+    <div class='container text-center px-lg-5'>
+      <div class='row'>
+        <Content
+          title=' Full Day Backcountry Ski Touring in Crestón Valley'
+          description={`<strong>Cerro Crestón</strong> is one of the top destinations for <strong>backcountry ski touring in Patagonia, Argentina</strong>. Located in El Chaltén, it offers diverse terrain with <strong>slopes ranging from 20° to 50°</strong>, making it ideal for both intermediate skiers and experienced riders seeking a bigger challenge.<br>
+          The southern face of Cerro Crestón features a glacier, adding a technical and magical element to the tour, with the possibility of skiing near crevasses and seracs. This unique glacier skiing experience makes Cerro Crestón a must-visit spot for off-piste enthusiasts.<br>
+          This area is a favorite among local skiers, due to its high-quality descents, stunning natural surroundings, and peaceful atmosphere. Far from the crowds, it often rewards visitors with pristine, untouched snow and the thrill of fresh tracks on unmarked terrain.<br>
+          <strong>The panoramic views of the río de las Vueltas valley and the northern face of Fitz Roy</strong> complete this unforgettable <strong>backcountry skiing experience in Patagonia.</strong><br>
+          Secure your spot now for a once-in-a-lifetime Patagonia backcountry skiing adventure. If you have extra time, we recommend considering a two- or three-days program to fully immerse yourself in this spectacular valley.`}
+          
+          difficulty=' Intermediate / Advanced'
+          duration=' 1 day (longer programs available upon request)'
+          pax=' 1 or 4 people'
+          time=' June to October'
+          hrefitinerary='../itineraries/creston/ProgramFullDaySkiingValledelCreston.pdf'
+
+          link1=' Crestón Experience'
+          href1='/#creston-experience'
+          link2=' Full Day Backcountry Skiing'
+          href2='/creston-experience/ski-creston'
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style></style>
