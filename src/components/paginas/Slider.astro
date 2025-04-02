@@ -8,7 +8,23 @@ const { miArray } = Astro.props;
 
 <div class="col-auto col-lg-6 mt-5 px-0 px-lg-0">
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="lightbox-gallery">
+      {
+        miArray.map ((foto, index) => (
+          <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
+            <a 
+              href={foto.srcFotos}
+              data-pswp-width="800"
+              data-pswp-height="500"
+            >
+              <img src={foto.srcFotos} class="d-block w-100" alt={foto.alt} />
+            </a>
+          </div>
+        ))
+      }
+    </div>
+   
+    <!-- <div class="carousel-inner">
       {
         miArray.map ((foto, index) => (
           <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
@@ -16,7 +32,7 @@ const { miArray } = Astro.props;
           </div>
         )
       )}
-    </div>
+    </div> -->
     
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -50,3 +66,4 @@ const { miArray } = Astro.props;
     position: relative;
   }
 </style>
+
