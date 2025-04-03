@@ -2,5 +2,7 @@
 import 'photoswipe/style.css';
 ---
 
-<!-- Cargar el script JS externo como módulo del navegador -->
-<script type="module" src="/scripts/initLightbox.js"></script>
+<script type="module">
+  import { initLightbox } from '../../scripts/initLightbox.js';
+  initLightbox();
+</script>
