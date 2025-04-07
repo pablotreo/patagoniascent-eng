@@ -66,3 +66,16 @@ const { miArray } = Astro.props;
     position: relative;
   }
 </style>
+
+<script>
+	import PhotoSwipeLightbox from "photoswipe/lightbox";
+	import "photoswipe/style.css";
+
+	const lightbox = new PhotoSwipeLightbox({
+		gallery: "#lightbox-gallery",
+		children: "a",
+		pswpModule: () => import("photoswipe"),
+	});
+
+	lightbox.init();
+</script>

@@ -1,9 +1,10 @@
 // src/scripts/initLightbox.js
 
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
+export async function initLightbox() {
+  if (typeof window === 'undefined') return;
 
-export function initLightbox() {
+  const PhotoSwipeLightbox = (await import('photoswipe/lightbox')).default;
+
   const lightbox = new PhotoSwipeLightbox({
     gallery: '#lightbox-gallery',
     children: 'a',
